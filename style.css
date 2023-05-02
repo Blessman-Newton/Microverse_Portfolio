@@ -1,13 +1,14 @@
 * {
   box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   color: #333;
-  background-color: #ffffff;
+  background-color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -15,18 +16,19 @@ body {
   width: 450px;
   display: flex;
   flex-direction: column;
-
 }
+
 nav {
   background-color: #333;
   padding: 20px;
-  color: #ffffff;
+  color: #fff;
   position: feixed;
   width: 450px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 .header .logo {
   display: flex;
   justify-content: space-between;
@@ -35,38 +37,43 @@ nav {
   min-width: 100px;
   width: 100%;
 }
+
 i {
   display: flex;
   justify-items: flex-end;
 }
+
 .container {
-  background-color: #1C1A19;
+  background-color: #1c1a19;
   display: flex;
   justify-content: space-between;
   align-self: center;
   flex-wrap: wrap;
   height: 580px;
   width: 450px;
-  left: 0px;
+  left: 0;
   top: 92px;
-  border-radius: 0px;
+  border-radius: 0;
   padding: 120px 24px 120px 24px;
-
 }
+
 .row {
   margin-top: 10px;
 }
+
 h1 {
-  color: #FF6B00;
+  color: #ff6b00;
   font-size: 30px;
-  font-family: 'Crete Round';
+  font-weight: bold;
   padding: 10px;
 }
-p, h2 {
+
+p,
+h2 {
   color: #f2f2f2;
   padding: 10px;
-
 }
+
 .icon {
   color: #fff;
   display: flex;
@@ -75,12 +82,12 @@ p, h2 {
   align-items: center;
   padding: 12px;
 }
+
 .shapes {
   position: relative;
-  left: 110px;
+  left: 86px;
   bottom: 230px;
   display: flex;
   justify-content: end;
   align-items: center;
 }
-
