@@ -25,6 +25,11 @@ body {
   justify-content: center;
 }
 
+.logo,
+svg {
+  cursor: pointer;
+}
+
 .nav-section .logo-section {
   display: flex;
   justify-content: space-between;
@@ -55,10 +60,10 @@ body {
 
 h1 {
   color: #ff6b00;
-  font-family: Crete Round;
+  font-family: 'Crete Round', serif;
   font-style: normal;
-  font-size: 54px;
-  font-weight: 400px;
+  font-size: 50px;
+  font-weight: 380px;
   line-height: 64px;
   letter-spacing: 0.3700000047683716px;
   text-align: left;
