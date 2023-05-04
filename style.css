@@ -58,6 +58,11 @@ svg {
   gap: 5px;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
 h1 {
   color: #ff6b00;
   font-family: 'Crete Round', serif;
@@ -121,9 +126,7 @@ li a i {
 i:hover {
   transition: ease-out 0.5s;
   border-radius: 8px;
-  border: 1px solid blue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border: 1px solid rgb(255, 255, 255);
+  color: #f98500;
   text-decoration: none;
 }
