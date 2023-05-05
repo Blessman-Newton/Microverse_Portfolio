@@ -134,12 +134,13 @@ i:hover {
 section {
   display: flex;
   flex-direction: column;
+  background-color: #f98500;
   gap: 80px;
 }
 
 .row1 {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr;
   gap: 20px;
   justify-content: space-around;
   background-color: #fff;
@@ -150,11 +151,11 @@ section {
 
 .recent-work h2 {
   color: #000;
+  text-align: center;
+  margin-bottom: 15px;
 }
-
 hr {
-  width: 320px;
-  margin: 8px;
+  margin-bottom: 20px;
 }
 
 .box4 {
@@ -269,42 +270,21 @@ hr {
   background: #ff6b00;
   padding: 12px;
 }
-
 .see-btn button {
-  width: 330px;
-  outline: none;
-  text-align: center;
-  background: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 100;
-}
-
-.see-btn {
-  width: 81%;
-  height: 40px;
-  background: #ff6b00;
-  position: absolute;
-  top: 119em;
-  left: 35.9px;
-  border-style: none;
-  color: #fff;
-  border-collapse: collapse;
-}
-
-.box4 button {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  outline: none;
-  text-align: center;
+  height: 55px;
+  width: 329px;
   position: relative;
+  left: -20.9px;
   top: 10px;
-  background: none;
-  border-style: none;
-  color: #fff;
-  border-collapse: collapse;
+  margin-bottom: -20px ;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  background-color: #ff6b00;
 }
+
