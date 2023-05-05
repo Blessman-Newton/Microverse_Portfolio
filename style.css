@@ -1,7 +1,7 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -130,171 +130,181 @@ i:hover {
   color: #f98500;
   text-decoration: none;
 }
+
 section {
-
-    display: flex;
-    flex-direction: column;
-    gap: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
 }
+
 .row1 {
-    display: grid;
-    grid-template-rows: 1fr1fr;
-    gap: 20px;
-    justify-content: space-around;
-    background-color: #ffffff;
-    width: 100%;
-    padding: 20px 120px;
-    place-items: center;
-  }
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  justify-content: space-around;
+  background-color: #fff;
+  width: 100%;
+  padding: 20px 120px;
+  place-items: center;
+}
 
-  .recent-work h2 {
-    color: #000000;
-  }
-  hr {
-    width: 320px;
-    margin: 8px;
-  }
-  .box4 {
-    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), 
+.recent-work h2 {
+  color: #000;
+}
+
+hr {
+  width: 320px;
+  margin: 8px;
+}
+
+.box4 {
+  background:
+    linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%),
     url("images/Img\ Placeholder\ \(2\).png");
-    left: 0px;
-    top: 0px;
-    width: 80%;
-    height: 369px;
-    color: #fff;
-    border-radius: 0px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-    margin: 20px;
-    letter-spacing: 1.2px;
-  
-  }
-  .box1 h2 {
-    font-family: 'Crete Round', sans-serif;
-    font-style: normal;
-    font-weight: 400px;
-    font-size: 32px;
-    line-height: 44px;
-    color: #000000;
-  }
-  .box1 p {
-    font-family: 'Inter';
-font-style: normal;
-font-weight: 400px;
-font-size: 16px;
-line-height: 24px;
-  }
-  .box1 {
-    background-color: #ffffff;
-    display: flex;
-    width: 80%;
-    gap: 10px;
-    align-items: space-around;
-    flex-direction: column;
-  }
-  .btn ul {
-    border: none;
-    outline: none;
-    color: rgba(255, 255, 255, 0.9);
-    height: 40px;
-    width: 100%;
-    cursor: pointer;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
+  left: 0;
+  top: 0;
+  width: 80%;
+  height: 369px;
+  color: #fff;
+  border-radius: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  margin: 20px;
+  letter-spacing: 1.2px;
+}
+
+.box1 h2 {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400px;
+  font-size: 32px;
+  line-height: 44px;
+  color: #000;
+}
+
+.box1 p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.box1 {
+  background-color: #fff;
+  display: flex;
+  width: 80%;
+  gap: 10px;
+  align-items: space-around;
+  flex-direction: column;
+}
+
+.btn ul {
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.9);
+  height: 40px;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 .btn li {
-   font-family: 'Inter';
-   font-style: normal;
-   font-weight: 500px;
-   font-size: 15px;
-   line-height: 20px;
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   align-items: center;
-   padding: 10px 12px;
-   width: 78px;
-   height: 40px;
-   color: #000000;
-   border: 1px solid #8993A4;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500px;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 12px;
+  width: 78px;
+  height: 40px;
+  color: #000;
+  border: 1px solid #8993a4;
 }
+
 .box4 li {
-    color: #fff;
-    width: 90px;
-    background: rgba(255, 255, 255, 0.24)
+  color: #fff;
+  width: 90px;
+  background: rgba(255, 255, 255, 0.24);
 }
+
 .box4 h2 {
-    color: #FFFFFF;
-    font-family: 'Crete Round';
-font-style: normal;
-font-weight: 400;
-font-size: 32px;
-line-height: 44px;
-
+  color: #fff;
+  font-family: 'Crete Round', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
 }
+
 .btn {
-    width: 100%;
+  width: 100%;
 }
- 
-  .see_more_btn {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    width: 80%;
-   
-  }
-  .see_more_btn button {
-    width: 124px;
-    height: 48px;
-    color: #ffffff;
-    outline: none;
-    border: none;
-    text-align: center;
-    background: #FF6B00;
-    padding: 12px;
-  }
-  .see-btn button{
-    width: 330px;
-    outline: none;
-    text-align: center;
-    background: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-  }
-  .see-btn {
-    width: 81%;
-    height: 40px;
-    background: #FF6B00;
-    position: absolute;
-    top: 119em;
-    left: 35.9px;
-    border-style: none;
-    color: #FFFFFF;
-    border-collapse: collapse;
-  }
-  .box4 button {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 17px;
-    line-height: 24px;
-    outline: none;
-    text-align: center;
-    position: relative;
-    top: 10px;
-    background: none;
-    border-style: none;
-    color: #fff;
-    border-collapse: collapse;
-  }
 
+.see_more_btn {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 80%;
+}
 
- 
+.see_more_btn button {
+  width: 124px;
+  height: 48px;
+  color: #fff;
+  outline: none;
+  border: none;
+  text-align: center;
+  background: #ff6b00;
+  padding: 12px;
+}
+
+.see-btn button {
+  width: 330px;
+  outline: none;
+  text-align: center;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.see-btn {
+  width: 81%;
+  height: 40px;
+  background: #ff6b00;
+  position: absolute;
+  top: 119em;
+  left: 35.9px;
+  border-style: none;
+  color: #fff;
+  border-collapse: collapse;
+}
+
+.box4 button {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  outline: none;
+  text-align: center;
+  position: relative;
+  top: 10px;
+  background: none;
+  border-style: none;
+  color: #fff;
+  border-collapse: collapse;
+}
