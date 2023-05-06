@@ -288,17 +288,20 @@ hr {
   color: #fff;
   background-color: #ff6b00;
 }
+
 button:hover {
   color: #fdfdfd;
   border: 1px solid #fa8100;
   background-color: rgba(254, 111, 2, 0.24);
   transition: ease-in 1s;
 }
+
 .button:active {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
 .about-me-section {
   background-color: #000;
   color: #fff5e1;
@@ -365,7 +368,6 @@ button:hover {
   line-height: 44px;
   padding: 20px;
   text-align: center;
-  background-coklor: cyan;
 }
 
 .Language {
@@ -375,22 +377,23 @@ button:hover {
 .framework {
   list-style-image: url("images/Rectangle\ 56\ \(1\).png");
 }
+
 .skills {
   list-style-position: inside;
   list-style-image: url("images/Rectangle\ 57.png");
 }
 
-/*.skills {
+/* .skills {
   position: relative;
   text-align: center;
   background-color: #075df3;
   list-style-image: url("images/Rectangle\ 57.png");
   list-style-position: inside;
-  
+
 }
 .about_footer .skills {
   padding: 40px;
-}*/
+} */
 .list-style li {
   list-style-image: none;
 }
