@@ -259,13 +259,18 @@ hr {
 }
 
 .see_more_btn button {
-  width: 124px;
+  width: 140px;
   height: 48px;
   color: #fff;
   outline: none;
   border: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700px;
+  font-size: 17px;
+  line-height: 24px;
   text-align: center;
-  background: #ff6b00;
+  background: #f55800;
   padding: 12px;
 }
 
@@ -286,20 +291,20 @@ hr {
   outline: none;
   border: none;
   color: #fff;
-  background-color: #ff6b00;
+  background: #f55800;
 }
 
 button:hover {
-  color: #fdfdfd;
-  border: 1px solid #fa8100;
-  background-color: rgba(254, 111, 2, 0.24);
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
   transition: ease-in 1s;
 }
 
 .button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+  background: #e05304;
+  background: #f4f1f0;
+  transform: translateY(8px);
 }
 
 .about-me-section {
@@ -383,17 +388,6 @@ button:hover {
   list-style-image: url("images/Rectangle\ 57.png");
 }
 
-/* .skills {
-  position: relative;
-  text-align: center;
-  background-color: #075df3;
-  list-style-image: url("images/Rectangle\ 57.png");
-  list-style-position: inside;
-
-}
-.about_footer .skills {
-  padding: 40px;
-} */
 .list-style li {
   list-style-image: none;
 }
