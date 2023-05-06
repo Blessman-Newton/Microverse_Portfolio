@@ -131,17 +131,6 @@ i:hover {
   text-decoration: none;
 }
 
-button:hover {
-  background-color: #000;
-  color: #ff6b00;
-  transition: ease-in 1s;
-}
-
-section {
-  display: flex;
-  flex-direction: column;
-}
-
 .work-section {
   display: grid;
   grid-template-rows: 1fr;
@@ -153,7 +142,7 @@ section {
   place-items: center;
 }
 
-.recent-work h1 {
+.recent-work h3 {
   color: #000;
   margin-bottom: 15px;
   font-family: 'Crete Round', 'Times New Roman', sans-serif;
@@ -287,18 +276,29 @@ hr {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+  cursor: pointer;
   height: 55px;
   width: 329px;
   position: relative;
   left: -20.9px;
-  top: 10px;
+  top: 2px;
   margin-bottom: -20px;
   outline: none;
   border: none;
   color: #fff;
   background-color: #ff6b00;
 }
-
+button:hover {
+  color: #fdfdfd;
+  border: 1px solid #fa8100;
+  background-color: rgba(254, 111, 2, 0.24);
+  transition: ease-in 1s;
+}
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 .about-me-section {
   background-color: #000;
   color: #fff5e1;
@@ -352,8 +352,7 @@ hr {
   line-height: 43px;
 }
 
-.list-style {
-  padding: 15px;
+.list-style ul {
   list-style-position: inside;
   color: #fff;
 }
@@ -364,6 +363,9 @@ hr {
   font-weight: 700px;
   font-size: 32px;
   line-height: 44px;
+  padding: 20px;
+  text-align: center;
+  background-coklor: cyan;
 }
 
 .Language {
@@ -373,11 +375,22 @@ hr {
 .framework {
   list-style-image: url("images/Rectangle\ 56\ \(1\).png");
 }
-
 .skills {
+  list-style-position: inside;
   list-style-image: url("images/Rectangle\ 57.png");
 }
 
+/*.skills {
+  position: relative;
+  text-align: center;
+  background-color: #075df3;
+  list-style-image: url("images/Rectangle\ 57.png");
+  list-style-position: inside;
+  
+}
+.about_footer .skills {
+  padding: 40px;
+}*/
 .list-style li {
   list-style-image: none;
 }
