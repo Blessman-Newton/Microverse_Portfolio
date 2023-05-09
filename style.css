@@ -301,7 +301,7 @@ button:hover {
   transition: ease-in 1s;
 }
 
-.button:active {
+button:active {
   background: #e05304;
   background: #f4f1f0;
   transform: translateY(8px);
