@@ -459,7 +459,7 @@ textarea {
   outline: none;
   border: none;
   color: #ffffff;
-  /*background-color: #ff6b00;*/ 
+  background-color: #ff6b00;
 }
 .footer {
   display: flex;
