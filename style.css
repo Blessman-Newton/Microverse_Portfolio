@@ -301,7 +301,7 @@ button:hover {
   transition: ease-in 1s;
 }
 
-.button:active {
+button:active {
   background: #e05304;
   background: #f4f1f0;
   transform: translateY(8px);
@@ -391,6 +391,7 @@ button:hover {
 .list-style li {
   list-style-image: none;
 }
+
 .contact-info {
   text-align: center;
   width: 100%;
@@ -421,7 +422,7 @@ button:hover {
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom-color:  #DBD8D7;
+  border-bottom-color: #dbd8d7;
   border-width: 1px;
   outline: none;
   padding: 15px;
@@ -429,23 +430,24 @@ button:hover {
 }
 
 textarea {
-  background: #FBF8F7;
+  background: #fbf8f7;
   border: none;
   outline: none;
   padding: 15px;
   height: 114px;
   width: 327px;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   font-family: 'Inter', sans-serif;
   font-style: italic;
   font-weight: 400px;
   font-size: 15px;
   line-height: 24px;
-  border-radius: 0px;
+  border-radius: 0;
 }
+
 .submit {
-  font-family: 'Inter',sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700px;
   font-size: 17px;
@@ -458,26 +460,41 @@ textarea {
   margin-bottom: 40px;
   outline: none;
   border: none;
-  color: #ffffff;
-  /*background-color: #ff6b00;*/ 
+  color: #fff;
+  background-color: #ff6b00;
 }
+
+.submit:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+  transition: ease-in 1s;
+}
+
+.submit:active {
+  background: #e05304;
+  background: #f4f1f0;
+  transform: translateY(8px);
+}
+
 .footer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 40px;
-  color: #505F79;
+  color: #505f79;
 }
+
 .footer li a i {
- color: #505F79;
+  color: #505f79;
 }
+
 .footer hr {
   height: 7px;
   width: 134px;
   left: 120px;
   top: 21px;
   border-radius: 10px;
-  background: #0D151E;
-
+  background: #0d151e;
 }
