@@ -24,7 +24,9 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-
+.nav-list {
+  display: none;
+}
 .logo,
 svg {
   cursor: pointer;
@@ -35,11 +37,6 @@ svg {
   justify-content: space-between;
   align-items: center;
   padding: 4px;
-  min-width: 100px;
-  width: 100%;
-}
-.nav-list {
-  display: none;
 }
 
 .container {
@@ -133,7 +130,6 @@ i:hover {
   color: #f98500;
   text-decoration: none;
 }
-
 .work-section {
   display: grid;
   grid-template-rows: 1fr;
@@ -145,25 +141,40 @@ i:hover {
   place-items: center;
 }
 
-.recent-work h3 {
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+.row1 {
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 20px;
+  justify-content: space-around;
+  background-color: #ff0000;
+  width: 100%;
+  padding: 100px 120px;
+  place-items: center;
+}
+
+.recent-work h1 {
   color: #000;
+  text-align: center;
   margin-bottom: 15px;
   font-family: 'Crete Round', 'Times New Roman', sans-serif;
   font-style: normal;
   font-size: 36px;
   line-height: 52px;
-  text-align: left;
 }
-
 hr {
   margin-bottom: 20px;
 }
+
 
 .project-section {
   background:
     linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%),
     url("images/Img\ Placeholder\ \(2\).png");
-
   width: 100%;
   height: 369px;
   color: #fff;
@@ -173,11 +184,10 @@ hr {
   flex-direction: column;
   gap: 40px;
   margin-bottom: 30px;
+  background-color: aqua;
   letter-spacing: 1.2px;
 }
-#img2 {
-  display: none;
-}
+
 .project-box h2 {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
@@ -186,7 +196,9 @@ hr {
   line-height: 44px;
   color: #000;
 }
-
+#img2 {
+  display: none;
+}
 .project-box p {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -260,11 +272,10 @@ hr {
 }
 
 .see_more_btn button {
-  width: 140px;
+   width: 140px;
   height: 48px;
   color: #fff;
   outline: none;
-  background: brown;
   border: none;
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -275,7 +286,6 @@ hr {
   background: #f55800;
   padding: 12px;
 }
-
 .see-btn button,
 .resume-btn button {
   font-family: 'Inter', sans-serif;
@@ -291,7 +301,6 @@ hr {
   color: #fff;
   background: #f55800;
 }
-
 button:hover {
   background: #fff5e1;
   border: 1px solid #f55800;
@@ -304,51 +313,66 @@ button:active {
   background: #f4f1f0;
   transform: translateY(8px);
 }
-
 .about-me-section {
-  background-color: #000;
+  background-color:#000000;
   color: #fff5e1;
   padding: 20px 15px;
   background-image: url("images/illustration-about-me-mobile.png");
   background-repeat: no-repeat;
   background-position: right;
-  background-position-y: 350px;
+  background-position-y: 300px;
 }
-
 .about-me {
   display: flex;
   justify-content: center;
   flex-direction: column;
   width: 22rem;
   padding: 16px;
-  margin-top: 60px;
+  margin-top: 50px;
   gap: 25px;
 }
-
 .about-me p {
-  color: #f4f5f7;
-  font-family: 'Inter', sans-serif;
+  color: #F4F5F7;
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
 }
-
 .resume-btn button {
   width: 150px;
   height: 40px;
   margin-left: 20px;
   margin-bottom: 16rem;
 }
-
 .about_footer {
-  margin: 60px 0;
+  margin: 60px 0px;
 }
 
+.language , .Framework , .Skills {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap:25px;
+  color: #fff;
+}
+.about_footer h2 {
+  font-family: 'InaiMathi', sans-serif;
+  font-style: normal;
+  font-weight: 700px;
+  font-size: 32px;
+  line-height: 44px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap:25px;
+  color: #fff;
+}
 .about_footer ul {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 15px;
   font-family: 'Inter', sans-serif;
@@ -356,6 +380,9 @@ button:active {
   font-weight: 400px;
   font-size: 22px;
   line-height: 43px;
+}
+.about_footer {
+  margin: 60px 0;
 }
 
 .list-style ul {
@@ -389,7 +416,15 @@ button:active {
 .list-style li {
   list-style-image: none;
 }
-
+.contact-form {
+  display: flex;
+  flex-direction: coluhmn;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  width: 100%;
+  height: 100vh;
+}
 .contact-info {
   text-align: center;
   width: 100%;
@@ -398,14 +433,11 @@ button:active {
   font-weight: 700px;
   font-size: 32px;
   line-height: 44px;
-  margin-top: 50px;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin-top: 40px;
   gap: 20px;
 }
@@ -421,7 +453,7 @@ button:active {
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom-color: #dbd8d7;
+  border-bottom-color:  #DBD8D7;
   border-width: 1px;
   outline: none;
   padding: 15px;
@@ -429,24 +461,23 @@ button:active {
 }
 
 textarea {
-  background: #fbf8f7;
+  background: #FBF8F7;
   border: none;
   outline: none;
   padding: 15px;
   height: 114px;
   width: 327px;
-  left: 0;
-  top: 0;
+  left: 0px;
+  top: 0px;
   font-family: 'Inter', sans-serif;
   font-style: italic;
   font-weight: 400px;
   font-size: 15px;
   line-height: 24px;
-  border-radius: 0;
+  border-radius: 0px;
 }
-
 .submit {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter',sans-serif;
   font-style: normal;
   font-weight: 700px;
   font-size: 17px;
@@ -459,43 +490,28 @@ textarea {
   margin-bottom: 40px;
   outline: none;
   border: none;
-  color: #fff;
+  color: #ffffff;
   background-color: #ff6b00;
 }
-
-.submit:hover {
-  background: #fff5e1;
-  border: 1px solid #f55800;
-  color: #f55800;
-  transition: ease-in 1s;
-}
-
-.submit:active {
-  background: #e05304;
-  background: #f4f1f0;
-  transform: translateY(8px);
-}
-
 .footer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 40px;
-  color: #505f79;
+  color: #505F79;
 }
-
 .footer li a i {
-  color: #505f79;
+ color: #505F79;
 }
-
 .footer hr {
   height: 7px;
   width: 134px;
   left: 120px;
   top: 21px;
   border-radius: 10px;
-  background: #0d151e;
+  background: #0D151E;
+
 }
 
 @media screen and (min-width: 768px) {
@@ -583,21 +599,17 @@ textarea {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 0px;
+    margin: 0px ;
+    gap: 20px;
   }
-  .project-section {
+    .project-section {
     width: 28%;
     margin: 20px;
     padding: 20px;
   }
-  .see-btn button {
-    background-color: #f98500;
-    position: relative;
-    margin-top: 18.4rem;
-    right: 20px;
-    width: 18.8rem;
-}
 
-  .first p,
+.first p,
 .first h2,
 .first .btn{
   display: none;
@@ -623,16 +635,30 @@ textarea {
   margin-left: 100px;
 }
 .about-me-section hr {
- width: 60rem;
- margin-left: 130px;
+  width: 1000px;
 }
-.about_footer {
+.profile ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.profile .ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
+
 .contact-form {
   display: flex;
   flex-direction: row;
+}
+ .see-btn {
+    position: relative;
+    margin-top: 18.4rem;
+   right: 19.7px;
+}
+.see-btn button{
+    width: 17.64em;
 }
 }
