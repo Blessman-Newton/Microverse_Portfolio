@@ -317,7 +317,7 @@ button:active {
 }
 
 .about-me-section {
-  background-color:#262626;
+  background-color: #262626;
   color: #fff5e1;
   padding: 20px 15px;
   background-image: url("images/illustration-about-me-mobile.png");
@@ -421,9 +421,11 @@ button:active {
   font-size: 32px;
   line-height: 44px;
 }
+
 .span {
   display: none;
 }
+
 .form-group {
   display: flex;
   flex-direction: column;
@@ -505,6 +507,7 @@ textarea {
   border-radius: 10px;
   background: #0d151e;
 }
+
 .desk-btn {
   display: none;
 }
@@ -633,16 +636,17 @@ textarea {
   .first-em .btn {
     display: none;
   }
-.first-mob {
-  display: none;
-}
+
+  .first-mob {
+    display: none;
+  }
+
   .recent-hr {
     width: 750px;
     border: 1px solid black;
   }
 
-  .first-em
-   {
+  .first-em {
     background-image: url("images/Img\ Placeholder\ \(6\).png");
   }
 
@@ -743,10 +747,12 @@ textarea {
     flex-direction: row;
     margin: 30px;
   }
-.span {
-  color: #262626;
-  display: inline;
-}
+
+  .span {
+    color: #262626;
+    display: inline;
+  }
+
   .hr {
     width: 100%;
   }
@@ -758,19 +764,21 @@ textarea {
   .desk-btn {
     display: flex;
   }
+
   .footer hr {
     display: none;
   }
+
   .Language {
     list-style-position: inside;
     list-style-image: url("images/Rectangle\ 55.png");
   }
-  
+
   .framework {
     list-style-position: inside;
     list-style-image: url("images/Rectangle\ 56\ \(1\).png");
   }
-  
+
   .skills {
     list-style-position: inside;
     list-style-image: url("images/Rectangle\ 57.png");
