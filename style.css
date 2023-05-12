@@ -349,7 +349,13 @@ button:active {
   width: 150px;
   height: 40px;
   margin-left: 20px;
+  animation-name: ani;
+  animation-duration: 4s;
   margin-bottom: 16rem;
+}
+@keyframes ani {
+  from {background-color: red;}
+  to {background-color: yellow;}
 }
 
 .about_footer ul {
