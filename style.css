@@ -25,6 +25,10 @@ body {
   justify-content: center;
 }
 
+.nav-list {
+  display: none;
+}
+
 .logo,
 svg {
   cursor: pointer;
@@ -35,8 +39,6 @@ svg {
   justify-content: space-between;
   align-items: center;
   padding: 4px;
-  min-width: 100px;
-  width: 100%;
 }
 
 .container {
@@ -142,14 +144,26 @@ i:hover {
   place-items: center;
 }
 
-.recent-work h3 {
-  color: #000;
-  margin-bottom: 15px;
-  font-family: 'Crete Round', 'Times New Roman', sans-serif;
-  font-style: normal;
-  font-size: 36px;
-  line-height: 52px;
-  text-align: left;
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+.row1 {
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 20px;
+  width: 100%;
+  padding: 100px 120px;
+  place-items: center;
+}
+
+.recent-work {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
 }
 
 hr {
@@ -160,19 +174,15 @@ hr {
   background:
     linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%),
     url("images/Img\ Placeholder\ \(2\).png");
-  left: 0;
-  top: 0;
-  width: 80%;
+  width: 100%;
   height: 369px;
   color: #fff;
-  border-radius: 0;
   display: flex;
+  justify-content: flex-start;
   align-items: flex-start;
-  justify-content: flex-end;
   flex-direction: column;
-  gap: 20px;
-  padding: 20px;
-  margin: 20px;
+  gap: 35px;
+  margin-bottom: 30px;
   letter-spacing: 1.2px;
 }
 
@@ -185,6 +195,10 @@ hr {
   color: #000;
 }
 
+#img2 {
+  display: none;
+}
+
 .project-box p {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -194,9 +208,8 @@ hr {
 }
 
 .project-box {
-  background-color: #fff;
   display: flex;
-  width: 80%;
+  width: 90%;
   gap: 10px;
   align-items: space-around;
   flex-direction: column;
@@ -255,7 +268,7 @@ hr {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  width: 80%;
+  padding-top: 10px;
 }
 
 .see_more_btn button {
@@ -284,10 +297,6 @@ hr {
   cursor: pointer;
   height: 55px;
   width: 329px;
-  position: relative;
-  left: -20.9px;
-  top: 2px;
-  margin-bottom: -20px;
   outline: none;
   border: none;
   color: #fff;
@@ -308,13 +317,13 @@ button:active {
 }
 
 .about-me-section {
-  background-color: #000;
+  background-color: #262626;
   color: #fff5e1;
   padding: 20px 15px;
   background-image: url("images/illustration-about-me-mobile.png");
   background-repeat: no-repeat;
   background-position: right;
-  background-position-y: 350px;
+  background-position-y: 300px;
 }
 
 .about-me {
@@ -323,7 +332,7 @@ button:active {
   flex-direction: column;
   width: 22rem;
   padding: 16px;
-  margin-top: 60px;
+  margin-top: 50px;
   gap: 25px;
 }
 
@@ -331,7 +340,7 @@ button:active {
   color: #f4f5f7;
   font-family: 'Inter', sans-serif;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 400px;
   font-size: 16px;
   line-height: 24px;
 }
@@ -343,16 +352,11 @@ button:active {
   margin-bottom: 16rem;
 }
 
-.about_footer {
-  margin: 60px 0;
-}
-
 .about_footer ul {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 5px;
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400px;
@@ -360,9 +364,15 @@ button:active {
   line-height: 43px;
 }
 
-.list-style ul {
-  list-style-position: inside;
+.about_footer {
+  margin: 60px;
   color: #fff;
+}
+
+.list-style ul {
+  color: #fff;
+  display: flex;
+  margin-top: 20px;
 }
 
 .about_footer .list-style {
@@ -385,11 +395,22 @@ button:active {
 
 .skills {
   list-style-position: inside;
+  width: 20rem;
   list-style-image: url("images/Rectangle\ 57.png");
 }
 
 .list-style li {
   list-style-image: none;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: coluhmn;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  width: 100%;
+  height: 50rem;
 }
 
 .contact-info {
@@ -400,14 +421,15 @@ button:active {
   font-weight: 700px;
   font-size: 32px;
   line-height: 44px;
-  margin-top: 50px;
+}
+
+.span {
+  display: none;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin-top: 40px;
   gap: 20px;
 }
@@ -465,19 +487,6 @@ textarea {
   background-color: #ff6b00;
 }
 
-.submit:hover {
-  background: #fff5e1;
-  border: 1px solid #f55800;
-  color: #f55800;
-  transition: ease-in 1s;
-}
-
-.submit:active {
-  background: #e05304;
-  background: #f4f1f0;
-  transform: translateY(8px);
-}
-
 .footer {
   display: flex;
   justify-content: center;
@@ -498,4 +507,281 @@ textarea {
   top: 21px;
   border-radius: 10px;
   background: #0d151e;
+}
+
+.desk-btn {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  svg {
+    display: none;
+  }
+
+  .nav-section {
+    padding-left: 30px;
+  }
+
+  .nav-list {
+    display: flex;
+    margin-right: 10rem;
+  }
+
+  .nav-list li a {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .nav-section .logo-section {
+    margin-left: 6rem;
+  }
+
+  .container {
+    background-image: url("images/Illustration-header.png");
+    background-size: contain;
+    background-position-y: top;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .row {
+    flex-direction: row-reverse;
+    gap: 60px;
+    width: 33.7rem;
+    height: 20rem;
+  }
+
+  .icon ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+  }
+
+  .project-box {
+    flex-direction: row;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .header-content {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #img1 {
+    display: none;
+  }
+
+  #img2 {
+    display: flex;
+  }
+
+  .work-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .recent-work h3 {
+    color: #000;
+    text-align: left;
+    margin-bottom: 15px;
+    font-family: 'Crete Round', 'Times New Roman', sans-serif;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 52px;
+  }
+
+  hr {
+    flex-direction: column;
+    align-self: center;
+    height: 1px;
+    text-align: left;
+    width: 194px;
+    left: 339px;
+    top: 26px;
+    border-radius: 0;
+  }
+
+  .work-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+  }
+
+  .project-section {
+    width: 28%;
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .project-section-box {
+    width: 100%;
+    height: 100vh;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .first-em p,
+  .first-em h2,
+  .first-em .btn {
+    display: none;
+  }
+
+  .first-mob {
+    display: none;
+  }
+
+  .recent-hr {
+    width: 750px;
+    border: 1px solid black;
+  }
+
+  .first-em {
+    background-image: url("images/Img\ Placeholder\ \(6\).png");
+  }
+
+  .second {
+    background-image: url("images/Img\ Placeholder\ \(4\).png");
+  }
+
+  .third {
+    background-image: url("images/Img\ Placeholder\ \(5\).png");
+  }
+
+  .third .project-section-box {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    margin-top: 7rem;
+  }
+
+  .see-btn {
+    position: relative;
+    margin-top: 18.4rem;
+    right: 19.7px;
+  }
+
+  .desk-btn .see-btn {
+    display: none;
+  }
+
+  .about-me-section {
+    background-image: url("images/Group.png");
+    background-size: auto;
+    background-position-y: 100px;
+  }
+
+  .about-me {
+    margin-left: 100px;
+  }
+
+  .about-me-section hr {
+    width: 1000px;
+  }
+
+  .profile ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .profile .ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .contact-info {
+    width: 40%;
+  }
+
+  .contact-info p {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    margin-top: 40px;
+  }
+
+  .form-group {
+    display: flex;
+    width: 60%;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .see-btn button {
+    width: 17.64em;
+  }
+
+  .input {
+    width: 40rem;
+  }
+
+  textarea {
+    width: 40rem;
+  }
+
+  .submit {
+    align-self: flex-start;
+  }
+
+  .footer ul {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+  }
+
+  .span {
+    color: #262626;
+    display: inline;
+  }
+
+  .hr {
+    width: 100%;
+  }
+
+  .footer li a i {
+    flex-direction: row;
+  }
+
+  .desk-btn {
+    display: flex;
+  }
+
+  .footer hr {
+    display: none;
+  }
+
+  .Language {
+    list-style-position: inside;
+    list-style-image: url("images/Rectangle\ 55.png");
+  }
+
+  .framework {
+    list-style-position: inside;
+    list-style-image: url("images/Rectangle\ 56\ \(1\).png");
+  }
+
+  .skills {
+    list-style-position: inside;
+    list-style-image: url("images/Rectangle\ 57.png");
+  }
 }

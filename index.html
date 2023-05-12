@@ -19,21 +19,31 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                 </svg>
+                <div class="nav-list">
+                    <ul>
+                        <li><a href="">Portfolio</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="https://medium.com/BlessmanNewton"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
     <section>
         <div class="container">
             <div class="row">
-                <h1>Hey There. <br> I'm Bless.</h1>
-                <h2>I'm a Software Developer</h2>
-                <p class="text">
-                    I can help you build a product , feature
-                    or website Look through some of my 
-                    work and experience! If you like what you 
-                    see and have a project you need coded, 
-                    don’t hesitate to contact me.
-                </p>
+                <div class="header-content">
+                    <h1>Hey There. <br> I'm Blessman.</h1>
+                    <h2>I'm a Software Developer</h2>
+                    <p class="text">
+                        I can help you build a product , feature
+                        or website Look through some of my 
+                        work and experience! If you like what you 
+                        see and have a project you need coded, 
+                        don’t hesitate to contact me.
+                    </p>
+                </div>
                 <div class="icon">
                     <ul>
                         <li><a href="https://github.com/BlessmanNewton"><i class="fa fa-github" aria-hidden="true"></i></a></li>
@@ -50,11 +60,15 @@
     <section>
         <div class="work-section">
             <div class="recent-work">
-                <h3>My Recent Work</h3>
-                <hr>
+                <h3>My Recent Works</h3>
+                <hr class="recent-hr">
             </div>
             <div class="project-box">
-                <img src="images/Img Placeholder.png" alt="">
+                <div class="img-holder">
+                    <img id="img1" src="images/Img Placeholder.png" alt="">
+                    <img id="img2" src="images/Img Placeholder (3).png" alt="">
+                </div>        
+                <div class="work-content">
                     <h2>Multi-Post-Stories</h2>
                     <p>
                         A daily selection of privately personalized 
@@ -75,112 +89,272 @@
                     <div class="see_more_btn">
                         <button>See Projects</button>
                     </div> 
-            </div>
-            <div class="project-section">
-                <h2>Profesional Art <br>
-                    Printing Data
-                </h2>
-                <p>
-                    A daily selection of privately  <br> 
-                    personalized reads; no accounts or <br> 
-                    sign-ups required. Has been the <br> 
-                    industry's standard.
-                </p>
-                <div class="btn">
-                    <ul>
-                        <li>HTML</li>
-                        <li>Bootstrap</li>
-                        <li>Ruby</li>
-                    </ul>
-                </div>
-                <div class="see-btn">
-                    <button>See Projects</button>
                 </div>
             </div>
-            <div class="project-section">
-                <h2>Profesional Art <br>
-                    Printing Data
-                </h2>
-                <p>
-                    A daily selection of privately  <br> 
-                    personalized reads; no accounts or <br> 
-                    sign-ups required. Has been the <br> 
-                    industry's standard.
-                </p>
-                <div class="btn">
-                    <ul>
-                        <li>HTML</li>
-                        <li>Bootstrap</li>
-                        <li>Ruby</li>
-                    </ul>
-                </div>
-                <div class="see-btn">
-                    <button>See Projects</button>
-                </div>
-            </div>
-            <div class="project-section">
-                <h2>Profesional Art <br>
-                    Printing Data
-                </h2>
-                <p>
-                    A daily selection of privately  <br> 
-                    personalized reads; no accounts or <br> 
-                    sign-ups required. Has been the <br> 
-                    industry's standard.
-                </p>
-                <div class="btn">
-                    <ul>
-                        <li>HTML</li>
-                        <li>Bootstrap</li>
-                        <li>Ruby</li>
-                    </ul>
-                </div>
-                <div class="see-btn">
-                    <button>See Projects</button>
-                </div>
-            </div>
-            <div class="project-section">
-                <h2>Profesional Art <br>
-                    Printing Data
-                </h2>
-                <p>
-                    A daily selection of privately  <br> 
-                    personalized reads; no accounts or <br> 
-                    sign-ups required. Has been the <br> 
-                    industry's standard.
-                </p>
-                <div class="btn">
-                    <ul>
-                        <li>HTML</li>
-                        <li>Bootstrap</li>
-                        <li>Ruby</li>
-                    </ul>
-                </div>
-                <div class="see-btn">
-                    <button>See Projects</button>
-                </div>
-            </div>
+            <div class="work-container">
+                <div class="project-section first-em">
+                  <h2>Profesional Art <br>
+                      Printing Data
+                  </h2>
+                  <p>
+                      A daily selection of privately  <br> 
+                      personalized reads; no accounts or <br> 
+                      sign-ups required. Has been the <br> 
+                      industry's standard.
+                  </p>
+                  <div class="btn">
+                      <ul>
+                          <li>HTML</li>
+                          <li>Bootstrap</li>
+                          <li>Ruby</li>
+                      </ul>
+                  </div>
+                  <div class="see-btn">
+                      <button>See Projects</button>
+                  </div>
+                  </div>
+                  <div class="project-section first-mob">
+                    <h2>Profesional Art <br>
+                        Printing Data
+                    </h2>
+                    <p>
+                        A daily selection of privately  <br> 
+                        personalized reads; no accounts or <br> 
+                        sign-ups required. Has been the <br> 
+                        industry's standard.
+                    </p>
+                    <div class="btn">
+                        <ul>
+                            <li>HTML</li>
+                            <li>Bootstrap</li>
+                            <li>Ruby</li>
+                        </ul>
+                    </div>
+                    <div class="see-btn">
+                        <button>See Projects</button>
+                    </div>
+                    </div>
+                    <div class="project-section first-mob">
+                        <h2>Profesional Art <br>
+                            Printing Data
+                        </h2>
+                        <p>
+                            A daily selection of privately  <br> 
+                            personalized reads; no accounts or <br> 
+                            sign-ups required. Has been the <br> 
+                            industry's standard.
+                        </p>
+                        <div class="btn">
+                            <ul>
+                                <li>HTML</li>
+                                <li>Bootstrap</li>
+                                <li>Ruby</li>
+                            </ul>
+                        </div>
+                        <div class="see-btn">
+                            <button>See Projects</button>
+                        </div>
+                        </div>
+                        <div class="project-section first-mob">
+                            <h2>Profesional Art <br>
+                                Printing Data
+                            </h2>
+                            <p>
+                                A daily selection of privately  <br> 
+                                personalized reads; no accounts or <br> 
+                                sign-ups required. Has been the <br> 
+                                industry's standard.
+                            </p>
+                            <div class="btn">
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>Bootstrap</li>
+                                    <li>Ruby</li>
+                                </ul>
+                            </div>
+                            <div class="see-btn">
+                                <button>See Projects</button>
+                            </div>
+                            </div>
+                            <div class="project-section first-mob">
+                                <h2>Profesional Art <br>
+                                    Printing Data
+                                </h2>
+                                <p>
+                                    A daily selection of privately  <br> 
+                                    personalized reads; no accounts or <br> 
+                                    sign-ups required. Has been the <br> 
+                                    industry's standard.
+                                </p>
+                                <div class="btn">
+                                    <ul>
+                                        <li>HTML</li>
+                                        <li>Bootstrap</li>
+                                        <li>Ruby</li>
+                                    </ul>
+                                </div>
+                                <div class="see-btn">
+                                    <button>See Projects</button>
+                                </div>
+                                </div>
+                                <div class="project-section first-mob">
+                                    <h2>Profesional Art <br>
+                                        Printing Data
+                                    </h2>
+                                    <p>
+                                        A daily selection of privately  <br> 
+                                        personalized reads; no accounts or <br> 
+                                        sign-ups required. Has been the <br> 
+                                        industry's standard.
+                                    </p>
+                                    <div class="btn">
+                                        <ul>
+                                            <li>HTML</li>
+                                            <li>Bootstrap</li>
+                                            <li>Ruby</li>
+                                        </ul>
+                                    </div>
+                                    <div class="see-btn">
+                                        <button>See Projects</button>
+                                    </div>
+                                    </div>
+                  <div class="project-section second desk-btn">
+                    <div class="project-section-box">
+                        <h2>Data Dashboard <br>
+                            Healthcare
+                         </h2>
+                          <p>
+                              A daily selection of privately  <br> 
+                              personalized reads; no accounts or <br> 
+                              sign-ups required. Has been the <br> 
+                              industry's standard.
+                          </p>
+                          <div class="btn">
+                              <ul>
+                                  <li>HTML</li>
+                                  <li>Bootstrap</li>
+                                  <li>Ruby</li>
+                              </ul>
+                          </div>
+                          <div class="see-btn">
+                              <button>See Projects</button>
+                          </div>
+                    </div>
+                  </div>
+                  <div class="project-section third desk-btn">
+                      <div class="project-section-box">
+                          <h2>Website Portfolio</h2>
+                          <p>
+                              A daily selection of privately  <br> 
+                              personalized reads; no accounts or <br> 
+                              sign-ups required. Has been the <br> 
+                              industry's standard.
+                          </p>
+                          <div class="btn">
+                              <ul>
+                                  <li>HTML</li>
+                                  <li>Bootstrap</li>
+                                  <li>Ruby</li>
+                              </ul>
+                          </div>
+                          <div class="see-btn">
+                              <button>See Projects</button>
+                          </div>
+                      </div>
+                        
+                  </div>
+                  <div class="project-section desk-btn">
+                    <div class="project-section-box">
+                        <h2>Profesional Art <br>
+                            Printing Data
+                        </h2>
+                        <p>
+                            A daily selection of privately  <br> 
+                            personalized reads; no accounts or <br> 
+                            sign-ups required. Has been the <br> 
+                            industry's standard.
+                        </p>
+                        <div class="btn">
+                            <ul>
+                                <li>HTML</li>
+                                <li>Bootstrap</li>
+                                <li>Ruby</li>
+                            </ul>
+                        </div>
+                        <div class="see-btn">
+                            <button>See Projects</button>
+                        </div>
+                    </div>
+                     
+                  </div>
+                  <div class="project-section second desk-btn">
+                    <div class="project-section-box">
+                        <h2>Data Dashboard <br>
+                            Healthcare
+                         </h2>
+                          <p>
+                              A daily selection of privately  <br> 
+                              personalized reads; no accounts or <br> 
+                              sign-ups required. Has been the <br> 
+                              industry's standard.
+                          </p>
+                          <div class="btn">
+                              <ul>
+                                  <li>HTML</li>
+                                  <li>Bootstrap</li>
+                                  <li>Ruby</li>
+                              </ul>
+                          </div>
+                          <div class="see-btn">
+                              <button>See Projects</button>
+                          </div>
+                    </div>
+                    
+                  </div>
+                  <div class="project-section third desk-btn">
+                    <div class="project-section-box">
+                        <h2>Website Portfolio</h2>
+                        <p>
+                            A daily selection of privately  <br> 
+                            personalized reads; no accounts or <br> 
+                            sign-ups required. Has been the <br> 
+                            industry's standard.
+                        </p>
+                        <div class="btn">
+                            <ul>
+                                <li>HTML</li>
+                                <li>Bootstrap</li>
+                                <li>Ruby</li>
+                            </ul>
+                        </div>
+                        <div class="see-btn">
+                            <button>See Projects</button>
+                        </div>
+                    </div>
+                      
+                  </div>
+              </div>
         </div>
     </section>
     <section class="about-me-section">
-        <div class="about-me">
-            <h1>About me</h3>
-            <p>
-                Hello I’m a software developer! I can help <br>
-                you build a product , feature or website <br>
-                Look through some of my work and <br> 
-                experience! If you like what you see and 
-                <br> have a project you need coded, don’t 
-                <br> hesitate to contact me.
-            </p>
-            <div class="resume-btn">
-                <button>Get my resume</button>
+            <div class="about-me">
+                <h1>About me</h3>
+                <p>
+                    Hello I’m a software developer! I can help <br>
+                    you build a product , feature or website <br>
+                    Look through some of my work and <br> 
+                    experience! If you like what you see and 
+                    <br> have a project you need coded, don’t 
+                    <br> hesitate to contact me.
+                </p>
+                <div class="resume-btn">
+                    <button>Get my resume</button>
+                </div>
             </div>
-        </div>
-        <hr>
-        <div class="about_footer">
+           <hr>
+         <div class="about_footer">
             <div class="profile">
-               <ul>
+               <ul class="ul">
                    <li class="list-style Language">Language
                        <ul>
                             <li>JavaScript</li>
@@ -198,6 +372,7 @@
                          </ul>
                      </li>
                      <li class="list-style skills">Skills
+                        <span class="span">................</span>
                         <ul>
                             <li>Database Management</li>
                             <li>Version</li>
@@ -224,12 +399,12 @@
             <div class="form-group">
                 <input class="input" type="text" name="name" maxlength="30" placeholder="Full name" rows="10" required>
                 <input class="input" type="email" name="email" placeholder="Email address" required>
-                <textarea name="send" maxlength="500" required placeholder="Write me something"></textarea>
+                <textarea name="send" maxlength="399" required>Write me something</textarea>
                 <input class="submit" type="submit" value="Get in touch">
             </div>
         </form>
     </section>
-    <hr>
+    <hr class="hr">
     <footer class="footer">
         <div class="icon">
             <ul>
