@@ -71,7 +71,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://https://blessman-newton.github.io/Microverse_Portfolio/.com)
+- [Live Demo Link](https://blessman-newton.github.io/Microverse_Portfolio/.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
