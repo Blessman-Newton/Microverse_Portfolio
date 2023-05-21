@@ -13,33 +13,59 @@ body {
   color: #333;
   min-height: 100%;
 }
-
-.nav-section {
-  background-color: #333;
-  padding: 20px;
-  color: #fff;
+header {
   width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  position: fixed;
+  background: #333;
+  top: 0;
 }
 
-.nav-list {
-  display: none;
+.main-container {
+ width: 1600px;
+ margin: auto;
 }
 
-.logo,
-svg {
-  cursor: pointer;
+.subcontainer {
+  width: 85%;
+  margin: auto;
 }
 
-.nav-section .logo-section {
+.navbar li {
+  list-style: none;
+}
+
+.navbar  a {
+  text-decoration: none;
+}
+
+.navbar {
+  width: 100%;
+  min-height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4px;
 }
+.navtabs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bars {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+  background-color: black;
+}
+
 
 .container {
   background-color: #1c1a19;
@@ -514,31 +540,6 @@ textarea {
 }
 
 @media screen and (min-width: 768px) {
-  svg {
-    display: none;
-  }
-
-  .nav-section {
-    padding-left: 30px;
-  }
-
-  .nav-list {
-    display: flex;
-    margin-right: 10rem;
-  }
-
-  .nav-list li a {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 600px;
-    font-size: 15px;
-    line-height: 20px;
-  }
-
-  .nav-section .logo-section {
-    margin-left: 6rem;
-  }
-
   .container {
     background-image: url("images/Illustration-header.png");
     background-size: contain;
@@ -785,3 +786,40 @@ textarea {
     list-style-image: url("images/Rectangle\ 57.png");
   }
 }
+@media screen and (max-width: 1600px) {
+  .main-container {
+    width: 100%;
+  }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .hamburger {
+      display: block;
+    }
+    .hamburger.active .bars:nth-child(2){
+      opacity: 0;
+    }
+    .hamburger.active .bars:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bars:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+    }
+    .navtabs {
+      position: fixed;
+      left: -100%;
+      top:70px;
+      flex-direction: column;
+      gap: 0;
+      width: 100%;
+      height: 30rem;
+      transition: 0.5s;
+      background: #333;
+    }
+    .navtabs.active {
+      left: 0;
+    }
+    .navtabs li{
+      margin: 16px 0;
+    }
+    }
