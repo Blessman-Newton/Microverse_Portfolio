@@ -13,22 +13,24 @@
 </head>
 <body>
     <header>
-        <nav class="nav-section">
-            <div class="logo-section">
-             <a href="">My logo</a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                </svg>
-                <div class="nav-list">
-                    <ul>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#about">About me</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="https://medium.com/BlessmanNewton"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
-                    </ul>
+       <div class="main-container">
+        <div class="subcontainer">
+            <nav class="navbar">
+                <a href="">My Logo</a>
+                <ul class="navtabs">
+                    <li id="list"><a href="">Portfolio</a></li>
+                    <li id="list"><a href="">About</a></li>
+                    <li id="list"><a href="">Contact</a></li>
+                    <li id="list"><a href="https://medium.com/BlessmanNewton"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                    <span class="bars"></span>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
+       </div>
     </header>
     <section id="portfolio">
         <div class="container">
@@ -407,7 +409,7 @@
     <hr class="hr">
     <footer class="footer">
         <div class="icon">
-            <ul>
+            <ul class="nav-menu">
                 <li><a href="https://github.com/BlessmanNewton"><i class="fa fa-github" aria-hidden="true"></i></a></li>
                 <li><a href="https://linkedin.com/BlessmanNewton"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                 <li><a href="https://angellist.com/BlessmanNewton"><i class="fa fa-angellist" aria-hidden="true"></i></a></li>
@@ -417,5 +419,6 @@
         </div>
         <hr>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
