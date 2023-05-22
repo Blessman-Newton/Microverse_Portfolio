@@ -803,11 +803,11 @@ textarea {
   }
 
   .hamburger.active .hamburger-bars:nth-child(1) {
-    transform: translateY(10px) rotate(60deg);
+    transform: translateY(8px) rotate(45deg);
   }
 
   .hamburger.active .hamburger-bars:nth-child(3) {
-    transform: translateX(-1px) rotate(-60deg);
+    transform: translateY(-4px) rotate(-45deg);
   }
 
   .navtabs {
@@ -824,10 +824,11 @@ textarea {
 
   .navtabs.active {
     top: 0;
+    margin-top: 28px;
   }
 
   .navtabs li {
-    margin: 5px 0;
+    margin: 10px 0;
     border-bottom: 1px solid #6a6a6a;
     border-right-width: 30px;
     padding: 8px;
