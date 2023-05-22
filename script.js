@@ -11,3 +11,4 @@ backMenu.forEach((element) => element.addEventListener('click', () => {
   hamburger.classList.remove('active');
   Menu.classList.remove('active');
 }));
+
