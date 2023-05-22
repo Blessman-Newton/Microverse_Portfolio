@@ -36,6 +36,7 @@ header {
 
 .navbar  a {
   text-decoration: none;
+  color: #FFF5E1;
 }
 
 .navbar {
@@ -47,9 +48,7 @@ header {
 }
 .navtabs {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 60px;
+  padding: 30px;
 }
 
 .hamburger {
@@ -57,13 +56,13 @@ header {
   cursor: pointer;
 }
 
-.bars {
+.hamburger-bars {
   display: block;
-  width: 25px;
-  height: 3px;
+  width: 20px;
+  height: 1px;
   margin: 5px 0;
   transition: all 0.3s ease;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
 }
 
 
@@ -538,6 +537,9 @@ textarea {
 .desk-btn {
   display: none;
 }
+.main-container {
+  width: 100%;
+}
 
 @media screen and (min-width: 768px) {
   .container {
@@ -787,39 +789,45 @@ textarea {
   }
 }
 @media screen and (max-width: 1600px) {
-  .main-container {
-    width: 100%;
-  }
+ 
   }
   
   @media screen and (max-width: 1024px) {
     .hamburger {
       display: block;
     }
-    .hamburger.active .bars:nth-child(2){
+    .hamburger.active .hamburger-bars:nth-child(2){
       opacity: 0;
     }
-    .hamburger.active .bars:nth-child(1){
-      transform: translateY(8px) rotate(45deg);
+    .hamburger.active .hamburger-bars:nth-child(1){
+      transform: translateY(10px) rotate(60deg);
     }
-    .hamburger.active .bars:nth-child(3){
-      transform: translateY(-8px) rotate(-45deg);
+    .hamburger.active .hamburger-bars:nth-child(3){
+      transform: translateX(-1px) rotate(-60deg);
     }
     .navtabs {
       position: fixed;
-      left: -100%;
-      top:70px;
+      top: -100%;
+      left: 0;
       flex-direction: column;
       gap: 0;
       width: 100%;
-      height: 30rem;
+      height: 35rem;
       transition: 0.5s;
       background: #333;
     }
     .navtabs.active {
-      left: 0;
+      top: 0;
     }
     .navtabs li{
-      margin: 16px 0;
+      margin: 5px 0;
+      border-bottom: 1px solid #6a6a6a;
+      border-right-width: 30px;
+      padding: 8px;
+    }
+
+    .icons {
+      display: none;
+      border-bottom: none;
     }
     }
