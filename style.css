@@ -353,9 +353,10 @@ button:active {
   animation-duration: 2s;
   margin-bottom: 16rem;
 }
+
 @keyframes animation {
-  from {background-color: red;}
-  to {background-color: yellow;}
+  from { background-color: red; }
+  to { background-color: yellow; }
 }
 
 .about_footer ul {
