@@ -7,3 +7,9 @@ hamburger.addEventListener('click', () => {
     Menu.classList.toggle('active');  
 })
 
+backMenu.forEach(Element => {
+    Element.addEventListener ('click', () => {
+        hamburger.classList.remove('active');
+        Menu.classList.remove('active');
+    })
+})
