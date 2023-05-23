@@ -1,4 +1,4 @@
-/*---------------------hamburger start here! below----------------------------- */
+/* ---------------------hamburger start here! below----------------------------- */
 const hamburger = document.querySelector('.hamburger');
 const menu = document.querySelector('.navtabs');
 const backMenu = document.querySelectorAll('#list');
@@ -13,4 +13,4 @@ backMenu.forEach((element) => element.addEventListener('click', () => {
   menu.classList.remove('active');
 }));
 
-/*---------------------hamburger code above----------------------------- */
+/* ---------------------hamburger code above----------------------------- */
