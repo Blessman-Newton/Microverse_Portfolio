@@ -63,6 +63,7 @@
 - **[Work section which includes my recent project]**
 - **[footer section showing usful links]**
 - **[add contact form]**
+- **[added mobile menu]**
 
 
 
@@ -119,9 +120,10 @@ You can deploy this project using by transfering files in your local repository 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👥 Authors <a name="authors">Blessman Newton</a>
+## 👥 Authors <a name="authors">Brighton Mtandi</a>
 
 
-👤 **Author1**
+👤 **Blessman Newton**
 
 - GitHub: [@Blessman Newton](https://github.com/Blessman-Newton)
 - Twitter: [@Blessman Newton](https://twitter.com/blessman_newton)
