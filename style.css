@@ -14,31 +14,67 @@ body {
   min-height: 100%;
 }
 
-.nav-section {
-  background-color: #333;
-  padding: 20px;
-  color: #fff;
+header {
   width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  position: fixed;
+  background: #333;
+  top: 0;
 }
 
-.nav-list {
-  display: none;
+.main-container {
+  width: 1600px;
+  margin: auto;
 }
 
-.logo,
-svg {
-  cursor: pointer;
+.subcontainer {
+  width: 85%;
+  margin: auto;
 }
 
-.nav-section .logo-section {
+li {
+  list-style-type: none;
+  font-size: 20px;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff5e1;
+}
+
+.navbar {
+  width: 100%;
+  min-height: 70px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4px;
+}
+
+.navtabs {
+  display: flex;
+  padding: 30px;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-bars {
+  display: block;
+  width: 20px;
+  height: 1px;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+  background-color: rgb(255, 255, 255);
 }
 
 .container {
@@ -58,11 +94,6 @@ svg {
   justify-content: flex-start;
   flex-direction: column;
   gap: 5px;
-}
-
-a {
-  text-decoration: none;
-  color: #fff;
 }
 
 h1 {
@@ -110,11 +141,6 @@ h2 {
 ul {
   display: flex;
   gap: 15px;
-}
-
-li {
-  list-style-type: none;
-  font-size: 20px;
 }
 
 li a i {
@@ -513,32 +539,42 @@ textarea {
   display: none;
 }
 
+.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50rem;
+  background-color: aqua;
+  width: 100vw;
+  height: 100vh;
+}
+
+.pop {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 100%;
+  gap: 20px;
+  background-color: #e05304;
+}
+
+.popup-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+}
+
+.popup-body {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 60px;
+}
+
 @media screen and (min-width: 768px) {
-  svg {
-    display: none;
-  }
-
-  .nav-section {
-    padding-left: 30px;
-  }
-
-  .nav-list {
-    display: flex;
-    margin-right: 10rem;
-  }
-
-  .nav-list li a {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 600px;
-    font-size: 15px;
-    line-height: 20px;
-  }
-
-  .nav-section .logo-section {
-    margin-left: 6rem;
-  }
-
   .container {
     background-image: url("images/Illustration-header.png");
     background-size: contain;
@@ -783,5 +819,105 @@ textarea {
   .skills {
     list-style-position: inside;
     list-style-image: url("images/Rectangle\ 57.png");
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .main-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .hamburger-bars:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .hamburger-bars:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .hamburger-bars:nth-child(3) {
+    transform: translateY(-4px) rotate(-45deg);
+  }
+
+  .navtabs {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    height: 35rem;
+    transition: 0.5s;
+    background: #333;
+  }
+
+  .navtabs.active {
+    top: 0;
+    margin-top: 28px;
+  }
+
+  .navtabs li {
+    margin: 10px 0;
+    border-bottom: 1px solid #6a6a6a;
+    border-right-width: 30px;
+    padding: 8px;
+  }
+
+  .icons {
+    display: none;
+    border-bottom: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .hamburger-bars:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .hamburger-bars:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .hamburger-bars:nth-child(3) {
+    transform: translateY(-4px) rotate(-45deg);
+  }
+
+  .navtabs {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    height: 35rem;
+    transition: 0.5s;
+    background: #333;
+  }
+
+  .navtabs.active {
+    top: 0;
+    margin-top: 28px;
+  }
+
+  .navtabs li {
+    margin: 10px 0;
+    border-bottom: 1px solid #6a6a6a;
+    border-right-width: 30px;
+    padding: 8px;
+  }
+
+  .icons {
+    display: none;
+    border-bottom: none;
   }
 }
