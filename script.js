@@ -1,3 +1,4 @@
+/*---------------------hamburger start here! below----------------------------- */
 const hamburger = document.querySelector('.hamburger');
 const Menu = document.querySelector('.navtabs');
 const backMenu = document.querySelectorAll('#list');
@@ -12,3 +13,4 @@ backMenu.forEach((element) => element.addEventListener('click', () => {
   Menu.classList.remove('active');
 }));
 
+/*---------------------hamburger code above----------------------------- */
