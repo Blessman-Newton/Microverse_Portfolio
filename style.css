@@ -538,12 +538,12 @@ textarea {
 .desk-btn {
   display: none;
 }
+
 .show {
   position: absolute;
   top: 50rem;
   background-color: aqua;
   width: 20rem;
-
 }
 
 @media screen and (min-width: 768px) {
