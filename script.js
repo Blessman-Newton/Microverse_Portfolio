@@ -1,4 +1,4 @@
-/*---------------------hamburger start here! below----------------------------- */
+/* ---------------------hamburger start here! below----------------------------- */
 const hamburger = document.querySelector('.hamburger');
 const Menu = document.querySelector('.navtabs');
 const backMenu = document.querySelectorAll('#list');
@@ -13,17 +13,17 @@ backMenu.forEach((element) => element.addEventListener('click', () => {
   Menu.classList.remove('active');
 }));
 
-/*---------------------hamburger code above----------------------------- */
+/* ---------------------hamburger code above----------------------------- */
 
-/*---------------------Windows popup code below----------------------------- */
+/* ---------------------Windows popup code below----------------------------- */
 const body = document.querySelector('body');
 const view = document.querySelector('.view-project');
-view.addEventListener('click', ()=> {
+view.addEventListener('click', () => {
   const show = document.createElement('div');
-  const detail_pop = document.createElement('div');
+  const detailPop = document.createElement('div');
   show.className = 'show';
-  detail_pop.className = 'pop';
-  detail_pop.innerHTML = `
+  detailPop.className = 'pop';
+  detailPop.innerHTML = `
                   <div class="popup-header">
                     <h2>Project Name</h2>
                     <span id="close">&times;</span>
@@ -54,15 +54,15 @@ view.addEventListener('click', ()=> {
                     </div>
                   </div>
 
-  `
-show.appendChild(detail_pop);
-body.appendChild(show);
+  `;
+  show.appendChild(detailPop);
+  body.appendChild(show);
 
-const close = document.querySelector('#close');
+  const close = document.querySelector('#close');
 
-close.addEventListener('click', ()=> {
-  body.removeChild(show);
+  close.addEventListener('click', () => {
+    body.removeChild(show);
+  });
 });
-});
 
-/*---------------------Windows popup code above----------------------------- */
+/* ---------------------Windows popup code above----------------------------- */
