@@ -548,8 +548,8 @@ textarea {
   background-color: aqua;
   width: 100vw;
   height: 100vh;
-
 }
+
 .pop {
   display: flex;
   flex-direction: column;
@@ -558,6 +558,7 @@ textarea {
   gap: 20px;
   background-color: #e05304;
 }
+
 .popup-header {
   display: flex;
   flex-direction: row;
@@ -565,12 +566,14 @@ textarea {
   padding: 20px;
   width: 100%;
 }
-.popup-body{
+
+.popup-body {
   display: flex;
   flex-direction: row;
   gap: 10px;
   margin-top: 60px;
 }
+
 @media screen and (min-width: 768px) {
   .container {
     background-image: url("images/Illustration-header.png");
@@ -823,7 +826,6 @@ textarea {
   .main-container {
     width: 100%;
   }
-
 }
 
 @media screen and (max-width: 1024px) {
