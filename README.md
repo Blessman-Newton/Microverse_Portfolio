@@ -127,6 +127,12 @@ You can deploy this project using by transfering files in your local repository 
 - Twitter: [@Blessman Newton](https://twitter.com/blessman_newton)
 - LinkedIn: [Blessman Newton](https://linkedin.com/in/blessman-newton-a7a80a251)
 
+👤 **brighton mtandi**
+
+- GitHub: [brighton0102](htpps://github.com/brighton0102)
+- Twitter: [@brighton_ui](https://twitter.com/brighton_ui)
+- LinkedIn: [brighton](https://www.linkedin.com/in/brighton-mtandi-976615267/)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
