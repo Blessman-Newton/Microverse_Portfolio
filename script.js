@@ -18,7 +18,6 @@ const contact = document.createElement('section');
 contact.id = 'contact';
 contact.className = 'contact-form';
 
-
 const footer = document.createElement('footer');
 footer.className = 'footer';
 
@@ -424,7 +423,6 @@ footer.innerHTML = `
 `;
 
 body.appendChild(footer);
-
 
 /* ---------------------hamburger start here! below----------------------------- */
 /* ---------------------hamburger start here! below----------------------------- */
