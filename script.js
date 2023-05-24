@@ -11,9 +11,8 @@ const portfolioContainer = document.createElement('div');
 portfolioContainer.className = 'work-section';
 
 const about = document.createElement('section');
-about.className = 'about-me-section'
+about.className = 'about-me-section';
 about.id = 'about';
-
 
 container.innerHTML = `
 <div class="row">
@@ -372,9 +371,8 @@ about.innerHTML = `
 </div>
 </div>
 `;
-//about.appendChild(aboutMe);
+// about.appendChild(aboutMe);
 body.appendChild(about);
-
 
 // /* ---------------------hamburger start here! below----------------------------- */
 // const hamburger = document.querySelector('.hamburger');
@@ -403,7 +401,7 @@ body.appendChild(about);
 //   detailPop.className = 'pop';
 //   detailPop.innerHTML = `
 //                   <div class="popup-header">
-//                     <h2>Keeping track of hundreds 
+//                     <h2>Keeping track of hundreds
 //                      of components website</h2>
 //                     <span id="close">&times;</span>
 //                   </div>
@@ -416,26 +414,28 @@ body.appendChild(about);
 //                     <img src="images/Snap.png" alt="">
 //                     <div class="pop-details">
 //                       <p>
-//                       Lorem Ipsum is simply dummy text of the 
-//                       printing and typesetting industry. 
-//                       Lorem Ipsum has been the industry's 
-//                       standard dummy text ever since the 1500s, 
+//                       Lorem Ipsum is simply dummy text of the
+//                       printing and typesetting industry.
+//                       Lorem Ipsum has been the industry's
+//                       standard dummy text ever since the 1500s,
 //                       when an unknown printer took a
 //                        galley of type and scrambled it 1960s.
 //                       </p>
 
 //                       <p>
-//                       Lorem Ipsum is simply dummy text of the printing and 
-//                       typesetting industry. Lorem Ipsum has been the industry's 
+//                       Lorem Ipsum is simply dummy text of the printing and
+//                       typesetting industry. Lorem Ipsum has been the industry's
 //                       standard dummy text ever since the 1500s,
-//                        when an unknown 
+//                        when an unknown
 //                       printer took a galley of type
-//                        and scrambled it 1960s 
+//                        and scrambled it 1960s
 //                       with the releax map lapora verita.
 //                       </p>
 //                       <div class="popup-button">
 //                         <button class="popup-btn">See live</button>
-//                         <button class="popup-btn">See Source <i class="fa fa-github" aria-hidden="true"></i></button>
+//                         <button class="popup-btn">See Source
+// <i class="fa fa-github" aria-hidden="true">
+// </i></button>
 //                       </div>
 //                     </div>
 //                   </div>
