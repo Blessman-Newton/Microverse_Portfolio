@@ -14,6 +14,17 @@ const about = document.createElement('section');
 about.className = 'about-me-section';
 about.id = 'about';
 
+const contact = document.createElement('section');
+contact.id = 'contact';
+contact.className = 'contact-form';
+
+
+const footer = document.createElement('footer');
+footer.className = 'footer';
+
+const hr = document.createElement('hr');
+hr.className = 'hr';
+
 container.innerHTML = `
 <div class="row">
 <div class="header-content">
@@ -371,84 +382,126 @@ about.innerHTML = `
 </div>
 </div>
 `;
-// about.appendChild(aboutMe);
 body.appendChild(about);
 
-// /* ---------------------hamburger start here! below----------------------------- */
-// const hamburger = document.querySelector('.hamburger');
-// const Menu = document.querySelector('.navtabs');
-// const backMenu = document.querySelectorAll('#list');
+contact.innerHTML = `
+<div class="contact-info">
+    <p>
+        I'm always <br> interested in 
+        hearing  <br> about new projects, 
+        <br> so if you'd like to <br> chat please 
+        get in  <br> touch.
+    </p>
+</div>
+<form action="https://formspree.io/f/mdovbjlz" method="post">
+    <div class="form-group">
+        <input class="input" type="text" name="name" maxlength="30" placeholder="Full name" rows="10" required>
+        <input class="input" type="email" name="email" placeholder="Email address" required>
+        <textarea name="send" maxlength="399" required>Write me something</textarea>
+        <input class="submit" type="submit" value="Get in touch">
+    </div>
+</form>
 
-// hamburger.addEventListener('click', () => {
-//   hamburger.classList.toggle('active');
-//   Menu.classList.toggle('active');
-// });
+`;
+body.appendChild(contact);
 
-// backMenu.forEach((element) => element.addEventListener('click', () => {
-//   hamburger.classList.remove('active');
-//   Menu.classList.remove('active');
-// }));
+hr.innerHTML = `
+  <hr class="hr">
+`;
+body.appendChild(hr);
 
-// /* ---------------------hamburger code above----------------------------- */
+footer.innerHTML = `
+<div class="icon">
+    <ul class="nav-menu">
+        <li><a href="https://github.com/BlessmanNewton"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+        <li><a href="https://linkedin.com/BlessmanNewton"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li><a href="https://angellist.com/BlessmanNewton"><i class="fa fa-angellist" aria-hidden="true"></i></a></li>
+        <li><a href="https://twitter.com/BlessmanNewton"><i class="fa fa-twitter" aria-hidden="true"></i></i></a></li>
+        <li><a href="https://medium.com/BlessmanNewton"><i class="fa fa-medium" aria-hidden="true"></i></a></li>
+    </ul>
+</div>
+<hr class="hr_footer">
+`;
 
-// /* ---------------------Windows popup code below----------------------------- */
+body.appendChild(footer);
 
-// const view = document.querySelectorAll('.view-project');
-// view.forEach((element) => element.addEventListener('click', () => {
-//   const show = document.createElement('div');
-//   const detailPop = document.createElement('div');
-//   show.className = 'show';
-//   detailPop.className = 'pop';
-//   detailPop.innerHTML = `
-//                   <div class="popup-header">
-//                     <h2>Keeping track of hundreds
-//                      of components website</h2>
-//                     <span id="close">&times;</span>
-//                   </div>
-//                     <div class="popup-button">
-//                       <button>HTML</button>
-//                       <button>Boostrap</button>
-//                       <button>Ruby on rails</button>
-//                     </div>
-//                   <div class="popup-body">
-//                     <img src="images/Snap.png" alt="">
-//                     <div class="pop-details">
-//                       <p>
-//                       Lorem Ipsum is simply dummy text of the
-//                       printing and typesetting industry.
-//                       Lorem Ipsum has been the industry's
-//                       standard dummy text ever since the 1500s,
-//                       when an unknown printer took a
-//                        galley of type and scrambled it 1960s.
-//                       </p>
 
-//                       <p>
-//                       Lorem Ipsum is simply dummy text of the printing and
-//                       typesetting industry. Lorem Ipsum has been the industry's
-//                       standard dummy text ever since the 1500s,
-//                        when an unknown
-//                       printer took a galley of type
-//                        and scrambled it 1960s
-//                       with the releax map lapora verita.
-//                       </p>
-//                       <div class="popup-button">
-//                         <button class="popup-btn">See live</button>
-//                         <button class="popup-btn">See Source
-// <i class="fa fa-github" aria-hidden="true">
-// </i></button>
-//                       </div>
-//                     </div>
-//                   </div>
+/* ---------------------hamburger start here! below----------------------------- */
+/* ---------------------hamburger start here! below----------------------------- */
+const hamburger = document.querySelector('.hamburger');
+const Menu = document.querySelector('.navtabs');
+const backMenu = document.querySelectorAll('#list');
 
-//   `;
-//   show.appendChild(detailPop);
-//   body.appendChild(show);
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  Menu.classList.toggle('active');
+});
 
-//   const close = document.querySelector('#close');
+backMenu.forEach((element) => element.addEventListener('click', () => {
+  hamburger.classList.remove('active');
+  Menu.classList.remove('active');
+}));
 
-//   close.addEventListener('click', () => {
-//     body.removeChild(show);
-//   });
-// }));
+/* ---------------------hamburger code above----------------------------- */
+
+/* ---------------------Windows popup code below----------------------------- */
+
+const view = document.querySelectorAll('.view-project');
+view.forEach((element) => element.addEventListener('click', () => {
+  const show = document.createElement('div');
+  const detailPop = document.createElement('div');
+  show.className = 'show';
+  detailPop.className = 'pop';
+  detailPop.innerHTML = `
+                  <div class="popup-header">
+                    <h2>Keeping track of hundreds
+                     of components website</h2>
+                    <span id="close">&times;</span>
+                  </div>
+                    <div class="popup-button">
+                      <button>HTML</button>
+                      <button>Boostrap</button>
+                      <button>Ruby on rails</button>
+                    </div>
+                  <div class="popup-body">
+                    <img src="images/Snap.png" alt="">
+                    <div class="pop-details">
+                      <p>
+                      Lorem Ipsum is simply dummy text of the
+                      printing and typesetting industry.
+                      Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s,
+                      when an unknown printer took a
+                       galley of type and scrambled it 1960s.
+                      </p>
+
+                      <p>
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s,
+                       when an unknown
+                      printer took a galley of type
+                       and scrambled it 1960s
+                      with the releax map lapora verita.
+                      </p>
+                      <div class="popup-button">
+                        <button class="popup-btn">See live</button>
+                        <button class="popup-btn">See Source
+<i class="fa fa-github" aria-hidden="true">
+</i></button>
+                      </div>
+                    </div>
+                  </div>
+
+  `;
+  show.appendChild(detailPop);
+  body.appendChild(show);
+
+  const close = document.querySelector('#close');
+
+  close.addEventListener('click', () => {
+    body.removeChild(show);
+  });
+}));
 
 // /* ---------------------Windows popup code above----------------------------- */
