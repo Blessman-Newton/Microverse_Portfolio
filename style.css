@@ -211,7 +211,27 @@ hr {
   margin-bottom: 30px;
   letter-spacing: 1.2px;
 }
+.project-section:hover {
+  animation: animate 2s;
+  transition: ease-out;
+}
+@keyframes animate {
+  0% {
+    transform: scale(0.95);
+  }
 
+  50% {
+    transform: scale(1.05);
+  }
+
+  75% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
 .project-box h2 {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
@@ -330,6 +350,7 @@ hr {
   color: #fff;
   background: #f55800;
 }
+
 
 .resume-btn button {
   font-family: 'Inter', sans-serif;
@@ -560,6 +581,9 @@ textarea {
   align-items: center;
   position: fixed;
   z-index: 99;
+  background: rgba(0, 0, 0, 0.15);
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter: blur(10px);
   top: 0;
   background: rgba(0, 0, 0, 0.5);
   width: 100vw;
@@ -602,8 +626,9 @@ textarea {
 
 .popup-button button {
   height: 40px;
-  width: 100px;
-  background: #dfe1e6;
+  background: linear-gradient(0deg, #FFFFFF, #FFFFFF),
+linear-gradient(0deg, #DFE1E6, #DFE1E6);
+
   border-radius: 0;
   outline: none;
   border: 1px solid #dfe1e6;
@@ -621,6 +646,12 @@ textarea {
   margin-top: 20px;
   background: #ff6b00;
   color: #fff;
+  font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: 700px;
+font-size: 17px;
+line-height: 24px;
+  width: 150px;
 }
 
 #lists {
@@ -629,11 +660,13 @@ textarea {
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
+  padding: 10px;
 }
 
 .git {
   position: relative;
-  left: 80px;
+  left: 10px;
+  
 }
 
 .desktop {
@@ -904,9 +937,16 @@ textarea {
   .footer hr {
     display: none;
   }
-
+#desktop {
+  font-family: 'Crete Round';
+  font-style: normal;
+  font-weight: 400px;
+  font-size: 32px;
+  line-height: 44px;
+}
   .desktop {
     display: flex;
+    color: #172B4D;
   }
 
   .Language {
@@ -931,7 +971,7 @@ textarea {
     position: fixed;
     z-index: 99;
     top: 0;
-    background: rgba(0, 0, 0, 0.15);
+    
     width: 100vw;
     height: 100vh;
   }
@@ -951,16 +991,15 @@ textarea {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    color: #000;
+    color: #172B4D;
     width: 100%;
   }
 
   .popup-header h2 {
-    color: #000;
+    color: #172B4D;
   }
 
   .pop button {
-    width: 140px;
     height: 48px;
     outline: none;
   }
@@ -992,6 +1031,7 @@ textarea {
   .popup-button #lists {
     position: relative;
     top: -20px;
+    padding: 20px;
     margin-bottom: 20px;
   }
 
