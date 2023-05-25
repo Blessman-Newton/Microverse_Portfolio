@@ -1,111 +1,110 @@
 const workData = [
-    {
-      image: ['images/Img Placeholder (3).png', 'images/holder.png'],
-      title: 'Multi-Post-Stories',
-      description: `
+  {
+    image: ['images/Img Placeholder (3).png', 'images/holder.png'],
+    title: 'Multi-Post-Stories',
+    description: `
           A daily selection of privately personalized reads; no accounts 
           or sign-ups required. has been the industry standard dummy text 
           ever since the 1500s, when anunknown printer took a standard dummy text.',
   
         `,
-      list: ['CSS', 'HTML', 'Boostrap', 'Ruby'],
-      button: 'See Project',
-    }
-  ];
-  
-  const portfolioData = [
-      {
-        image: ['images/Img Placeholder (6).png',
-         'images/holder.png',
-        'images/Img Placeholder (2).png',
-        'images/Img Placeholder (4).png',
-        'images/Placeholder.png', 
-        'images/aya.png',
-        'images/snapsmall.png'],
-        title: 'Data Dashboard Healthcare',
-        description: `
+    list: ['CSS', 'HTML', 'Boostrap', 'Ruby'],
+    button: 'See Project',
+    link: 'https://github.com/Blessman-Newton/Microverse_Portfolio',
+    live_see: 'https://blessman-newton.github.io/Microverse_Portfolio/',
+  },
+];
+
+const portfolioData = [
+  {
+    image: ['images/Img Placeholder (6).png',
+      'images/holder.png',
+      'images/Img Placeholder (2).png',
+      'images/Img Placeholder (4).png',
+      'images/Placeholder.png',
+      'images/aya.png',
+      'images/snapsmall.png'],
+    title: 'Data Dashboard Healthcare',
+    description: `
         A daily selection of privately reads;
          no accounts or sign-ups
          required. has been the industry standard.
     
           `,
-        list: ['HTML', 'Boostrap', 'Ruby'],
-      },
-      {
-          title: 'Website Portfolio',
-          list: ['HTML', 'Boostrap', 'Ruby'],
-        },
-        {
-          image: ['images/Img Placeholder (3).png', 'images/holder.png'],
-          title: 'Profesional Art <br> Printing Data',
-          description: `
+    list: ['HTML', 'Boostrap', 'Ruby'],
+  },
+  {
+    title: 'Website Portfolio',
+    list: ['HTML', 'Boostrap', 'Ruby'],
+  },
+  {
+    image: ['images/Img Placeholder (3).png', 'images/holder.png'],
+    title: 'Profesional Art <br> Printing Data',
+    description: `
           A daily selection of privately personalized reads; no accounts 
           or sign-ups required. has been the industry standard. 
       
             `,
-          list: ['HTML', 'Boostrap', 'Ruby'],
-          button: 'See Project',
-        },
-    ];
+    list: ['HTML', 'Boostrap', 'Ruby'],
+    button: 'See Project',
+  },
+];
 
-  const hr = document.createElement('hr');
-  hr.className = 'hr';
-  
- 
+const hr = document.createElement('hr');
+hr.className = 'hr';
 
-  /* ---------------------hamburger start here! below----------------------------- */
-  /* ---------------------hamburger start here! below----------------------------- */
-  const hamburger = document.querySelector('.hamburger');
-  const Menu = document.querySelector('.navtabs');
-  const backMenu = document.querySelectorAll('#list');
-  
-  hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    Menu.classList.toggle('active');
-  });
-  
-  backMenu.forEach((element) => element.addEventListener('click', () => {
-    hamburger.classList.remove('active');
-    Menu.classList.remove('active');
-  }));
-  
-  /* ---------------------hamburger code above----------------------------- */
-  
-  /* ---------------------Windows popup code below----------------------------- */
-  document.addEventListener('DOMContentLoaded', () => { 
-    console.log("Hello")
-    /*
-    variable to be use to create 
+/* ---------------------hamburger start here! below----------------------------- */
+/* ---------------------hamburger start here! below----------------------------- */
+const hamburger = document.querySelector('.hamburger');
+const Menu = document.querySelector('.navtabs');
+const backMenu = document.querySelectorAll('#list');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  Menu.classList.toggle('active');
+});
+
+backMenu.forEach((element) => element.addEventListener('click', () => {
+  hamburger.classList.remove('active');
+  Menu.classList.remove('active');
+}));
+
+/* ---------------------hamburger code above----------------------------- */
+
+/* ---------------------Windows popup code below----------------------------- */
+document.addEventListener('DOMContentLoaded', () => {
+  /*
+    variable to be use to create
     html tag in js
 */
 
   const body = document.querySelector('body');
-  
+
   const homeSection = document.createElement('section');
   homeSection.id = 'home';
   const container = document.createElement('div');
   container.className = 'container';
-  
+
   const portfolio = document.createElement('section');
   portfolio.id = 'portfolio';
   const portfolioContainer = document.createElement('div');
   portfolioContainer.className = 'work-section';
-  
+
   const about = document.createElement('section');
   about.className = 'about-me-section';
   about.id = 'about';
-  
+
   const contact = document.createElement('section');
   contact.id = 'contact';
   contact.className = 'contact-form';
-  
+
   const footer = document.createElement('footer');
   footer.className = 'footer';
   /*
-    variable to be use to create 
+    variable to be use to create
     html tag in js ---Ends here---
 */
-     /*
+  /*
     Work section
       and
     hero section below
@@ -137,8 +136,7 @@ const workData = [
   `;
   homeSection.appendChild(container);
   body.appendChild(homeSection);
-  
-  
+
   portfolioContainer.innerHTML = `
   <div class="recent-work">
       <h3>My Recent Works</h3>
@@ -380,15 +378,15 @@ const workData = [
     </div>
   
   `;
-  
+
   portfolio.appendChild(portfolioContainer);
   body.appendChild(portfolio);
-   /*
+  /*
     Work section
       and
     hero section above
 */
- /*
+  /*
     about section
       and
     get resume section below
@@ -444,13 +442,13 @@ const workData = [
   </div>
   `;
   body.appendChild(about);
-  
-/*  about section
+
+  /*  about section
       and
     get resume section above
 */
 
-// ----contact section below -----
+  // ----contact section below -----
 
   contact.innerHTML = `
   <div class="contact-info">
@@ -492,22 +490,21 @@ const workData = [
   </div>
   <hr class="hr_footer">
   `;
-  
+
   body.appendChild(footer);
- // ----contact section above -----
+  // ----contact section above -----
 
-
-    const view = document.querySelectorAll('.view-project');
-    view.forEach((element) => element.addEventListener('click', () => {
-      const show = document.createElement('div');
-      const detailPop = document.createElement('div');
-      show.className = 'show';
-      detailPop.className = 'pop';
-      detailPop.innerHTML = `
+  const view = document.querySelectorAll('.view-project');
+  view.forEach((element) => element.addEventListener('click', () => {
+    const show = document.createElement('div');
+    const detailPop = document.createElement('div');
+    show.className = 'show';
+    detailPop.className = 'pop';
+    detailPop.innerHTML = `
                       <div class="popup-header">
                         <h2 class="desktop">Keeping track of hundreds
                          of components website</h2>
-                         <h2 class="mobn">Multi Post Stories</h2>
+                         <h2 class="mob-title">Multi Post Stories</h2>
                         <span id="close">&times;</span>
                       </div>
                         <div class="popup-button">
@@ -516,8 +513,8 @@ const workData = [
                           <button id="lists">Ruby on rails</button>
                         </div>
                       <div class="popup-body">
-                        <img class="desktop" src="${portfolioData[0].image[4]}" alt="">
-                        <img class="mob" src="${portfolioData[0].image[1]}" alt="">
+                        <img class="desktop" src="${portfolioData[0].image[5]}" alt="">
+                        <img class="mob" src="${portfolioData[0].image[6]}" alt="">
                         <div class="pop-details">
                           <p>
                           Lorem Ipsum is simply dummy text of the
@@ -527,28 +524,35 @@ const workData = [
                           when an unknown printer took a
                            galley of type and scrambled it 1960s.
                           </p>
-    
+
+                          <p class="desktop">
+                          Lorem Ipsum is simply dummy text of the
+                          printing and typesetting industry.
+                          Lorem Ipsum has been the industry's
+                          standard dummy text ever since the 1500s,
+                          when an unknown printer took a
+                           galley of type and scrambled it 1960s.
+                          </p>
                          
                           <div class="popup-button">
-                            <button class="popup-btn">See live <img src="images/Icon.png" alt=""></button>
-                            <button class="popup-btn git">See Source
+                            <button class="popup-btn"><a href="${workData[0].live_see}">See live</a></button>
+                            <button class="popup-btn git"><a href="${workData[0].link}">See Source
                                 <i class="fa fa-github" aria-hidden="true">
-                                </i
-                            ></button>
+                                </i></a>
+                            </button>
                           </div>
                         </div>
                       </div>
     
       `;
-      show.appendChild(detailPop);
-      body.appendChild(show);
-    
-      const close = document.querySelector('#close');
-    
-      close.addEventListener('click', () => {
-        body.removeChild(show);
-      });
-    }));
-    
-  });
-  // /* ---------------------Windows popup code above----------------------------- */
+    show.appendChild(detailPop);
+    body.appendChild(show);
+
+    const close = document.querySelector('#close');
+
+    close.addEventListener('click', () => {
+      body.removeChild(show);
+    });
+  }));
+});
+// /* ---------------------Windows popup code above----------------------------- */
