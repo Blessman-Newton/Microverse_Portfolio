@@ -459,13 +459,14 @@ document.addEventListener('DOMContentLoaded', () => {
           get in  <br> touch.
       </p>
   </div>
-  <form class="contact-form" action="https://formspree.io/f/mdovbjlz" method="post">
+  <form class="contact-form" id="myForm" action="https://formspree.io/f/mdovbjlz" method="post">
       <div class="form-group">
           <input class="input" type="text" name="name" maxlength="30" placeholder="Full name" rows="10" required>
-          <input class="input" id="email" type="email" name="email" placeholder="Email address" required>
+          <input class="input" id="emailField"  type="email" name="email" placeholder="Email address" required>
+          <span id="errorField" class="error"></span>
           <textarea name="send" maxlength="399" required>Write me something</textarea>
           <input class="submit" type="submit" value="Get in touch">
-          <span id="error_message"></span>
+          
       </div>
   </form>
   
@@ -477,6 +478,11 @@ document.addEventListener('DOMContentLoaded', () => {
     <hr class="hr">
   `;
   body.appendChild(hr);
+
+
+  // Add event listener to the form
+  var myForm = document.getElementById("myForm");
+  myForm.addEventListener("submit", handleSubmit);
   // ----footer section below -----
   footer.innerHTML = `
   <div class="icon">
@@ -502,7 +508,7 @@ document.addEventListener('DOMContentLoaded', () => {
     detailPop.className = 'pop';
     detailPop.innerHTML = `
                       <div class="popup-header">
-                        <h2 class="desktop">Keeping track of hundreds
+                        <h2 class="desktop" id="desktop">Keeping track of hundreds
                          of components website</h2>
                          <h2 class="mob-title">Multi Post Stories</h2>
                         <span id="close">&times;</span>
@@ -557,3 +563,4 @@ document.addEventListener('DOMContentLoaded', () => {
   }));
 });
 // /* ---------------------Windows popup code above----------------------------- */
+
