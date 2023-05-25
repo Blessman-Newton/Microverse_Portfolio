@@ -535,7 +535,8 @@ document.addEventListener('DOMContentLoaded', () => {
                           </p>
                          
                           <div class="popup-button">
-                            <button class="popup-btn"><a href="${workData[0].live_see}">See live</a></button>
+                            <button class="popup-btn"><a href="${workData[0].live_see}">See live
+                            <i class="fa fa-external-link" aria-hidden="true"></i></a></button>
                             <button class="popup-btn git"><a href="${workData[0].link}">See Source
                                 <i class="fa fa-github" aria-hidden="true">
                                 </i></a>
