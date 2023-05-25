@@ -211,10 +211,12 @@ hr {
   margin-bottom: 30px;
   letter-spacing: 1.2px;
 }
+
 .project-section:hover {
   animation: animate 2s;
   transition: ease-out;
 }
+
 @keyframes animate {
   0% {
     transform: scale(0.95);
@@ -232,6 +234,7 @@ hr {
     transform: scale(1);
   }
 }
+
 .project-box h2 {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
@@ -350,7 +353,6 @@ hr {
   color: #fff;
   background: #f55800;
 }
-
 
 .resume-btn button {
   font-family: 'Inter', sans-serif;
@@ -581,9 +583,8 @@ textarea {
   align-items: center;
   position: fixed;
   z-index: 99;
-  background: rgba(0, 0, 0, 0.15);
-    backdrop-filter:blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   top: 0;
   background: rgba(0, 0, 0, 0.5);
   width: 100vw;
@@ -626,9 +627,9 @@ textarea {
 
 .popup-button button {
   height: 40px;
-  background: linear-gradient(0deg, #FFFFFF, #FFFFFF),
-linear-gradient(0deg, #DFE1E6, #DFE1E6);
-
+  background:
+    linear-gradient(0deg, #fff, #fff),
+    linear-gradient(0deg, #dfe1e6, #dfe1e6);
   border-radius: 0;
   outline: none;
   border: 1px solid #dfe1e6;
@@ -647,10 +648,10 @@ linear-gradient(0deg, #DFE1E6, #DFE1E6);
   background: #ff6b00;
   color: #fff;
   font-family: 'Inter', sans-serif;
-font-style: normal;
-font-weight: 700px;
-font-size: 17px;
-line-height: 24px;
+  font-style: normal;
+  font-weight: 700px;
+  font-size: 17px;
+  line-height: 24px;
   width: 150px;
 }
 
@@ -666,7 +667,6 @@ line-height: 24px;
 .git {
   position: relative;
   left: 10px;
-  
 }
 
 .desktop {
@@ -937,16 +937,18 @@ line-height: 24px;
   .footer hr {
     display: none;
   }
-#desktop {
-  font-family: 'Crete Round';
-  font-style: normal;
-  font-weight: 400px;
-  font-size: 32px;
-  line-height: 44px;
-}
+
+  #desktop {
+    font-family: 'Crete Round', sans-serif;
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
   .desktop {
     display: flex;
-    color: #172B4D;
+    color: #172b4d;
   }
 
   .Language {
@@ -971,7 +973,6 @@ line-height: 24px;
     position: fixed;
     z-index: 99;
     top: 0;
-    
     width: 100vw;
     height: 100vh;
   }
@@ -991,12 +992,12 @@ line-height: 24px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    color: #172B4D;
+    color: #172b4d;
     width: 100%;
   }
 
   .popup-header h2 {
-    color: #172B4D;
+    color: #172b4d;
   }
 
   .pop button {
