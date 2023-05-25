@@ -463,10 +463,10 @@ document.addEventListener('DOMContentLoaded', () => {
       <div class="form-group">
           <input class="input" type="text" name="name" maxlength="30" placeholder="Full name" rows="10" required>
           <input class="input" id="emailField"  type="email" name="email" placeholder="Email address" required>
-          <span id="errorField" class="error"></span>
-          <textarea name="send" maxlength="399" required>Write me something</textarea>
+         
+          <textarea name="send" maxlength="399" placeholder="Write me something" required></textarea>
           <input class="submit" type="submit" value="Get in touch">
-          
+          <span id="errorField" class="error"></span>
       </div>
   </form>
   
@@ -479,10 +479,6 @@ document.addEventListener('DOMContentLoaded', () => {
   `;
   body.appendChild(hr);
 
-
-  // Add event listener to the form
-  var myForm = document.getElementById("myForm");
-  myForm.addEventListener("submit", handleSubmit);
   // ----footer section below -----
   footer.innerHTML = `
   <div class="icon">
@@ -563,4 +559,3 @@ document.addEventListener('DOMContentLoaded', () => {
   }));
 });
 // /* ---------------------Windows popup code above----------------------------- */
-
