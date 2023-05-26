@@ -242,7 +242,7 @@ hr {
 }
 
 .error {
-  color: red;
+  color: rgb(0, 255, 0);
 }
 
 .project-box p {
