@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -19,6 +21,7 @@ header {
   width: 100%;
   background: #333;
   top: 0;
+  z-index: 1;
 }
 
 .main-container {
@@ -188,51 +191,37 @@ section {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-direction: column;
   width: 100%;
   gap: 20px;
+  color: #000;
+  text-align: left;
+  margin-bottom: 15px;
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 52px;
 }
 
 hr {
   margin-bottom: 20px;
 }
 
-.project-section {
-  background:
-    linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%),
-    url("images/Img\ Placeholder\ \(2\).png");
-  width: 100%;
-  height: 350px;
-  color: #fff;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-  gap: 35px;
-  margin-bottom: 30px;
-  letter-spacing: 1.2px;
+.popup-btn .link-img {
+  height: 20px;
+  width: 20px;
+  left: 5px;
+  position: relative;
+  top: 5px;
+  font-size: 20px;
+  border-radius: 0;
 }
 
-.project-section:hover {
-  animation: animate 2s;
-  transition: ease-out;
-}
-
-@keyframes animate {
-  0% {
-    transform: scale(0.95);
-  }
-
-  50% {
-    transform: scale(1.05);
-  }
-
-  75% {
-    transform: scale(1);
-  }
-
-  100% {
-    transform: scale(1);
-  }
+.recent-hr {
+  width: 327px;
+  height: 0;
+  border: 1px solid #212121;
 }
 
 .project-box h2 {
@@ -292,21 +281,6 @@ hr {
   width: 78px;
   height: 40px;
   border: 1px solid #8993a4;
-}
-
-.project-section li {
-  color: #fff;
-  width: 90px;
-  background: rgba(255, 255, 255, 0.24);
-}
-
-.project-section h2 {
-  color: #fff;
-  font-family: 'Crete Round', serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 44px;
 }
 
 .btn {
@@ -391,6 +365,7 @@ button:active {
   background-color: #262626;
   color: #fff5e1;
   padding: 20px 15px;
+  margin-top: 180px;
   background-image: url("images/illustration-about-me-mobile.png");
   background-repeat: no-repeat;
   background-position: right;
@@ -405,6 +380,14 @@ button:active {
   padding: 16px;
   margin-top: 50px;
   gap: 25px;
+}
+
+.cont h2 {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
 }
 
 .about-me p {
@@ -681,6 +664,113 @@ textarea {
   display: flex;
 }
 
+#work-card {
+  display: none;
+}
+
+#work-card-mobile {
+  gap: 40px;
+  display: flex;
+}
+
+.card {
+  height: 400px;
+  width: 300px;
+  position: relative;
+  top: 20px;
+  left: 30px;
+  color: #fff;
+  margin-left: 15px;
+}
+
+.card h2 {
+  color: #fff;
+}
+
+.cont {
+  position: absolute;
+  top: 20%;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.card-img {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 410px;
+  width: 310px;
+}
+
+.cont ul li {
+  height: 40px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.24);
+  left: 79px;
+  top: 0;
+  border-radius: 0;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+#work-card-mobile .card-button {
+  height: 58px;
+  width: 310px;
+  position: relative;
+  bottom: 70px;
+}
+
+#work-card-mobile .card:hover {
+  animation: animate 2s;
+  transition: ease-out;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(0.95);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  75% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.card-button button {
+  position: relative;
+  top: 25%;
+  outline: none;
+  border: none;
+  background: #f55800;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.card-button button:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+  transition: ease-in 1s;
+}
+
 @media screen and (min-width: 768px) {
   .container {
     background-image: url("images/Illustration-header.png");
@@ -717,6 +807,116 @@ textarea {
     flex-direction: column;
   }
 
+  /* ------------work-card--------------- */
+  #work-card {
+    display: flex;
+    position: relative;
+    top: -70px;
+    gap: 70px;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  #work-card-mobile {
+    display: none;
+  }
+
+  .card {
+    height: 400px;
+    width: 300px;
+    position: relative;
+    top: 20px;
+    left: 65px;
+    color: #fff;
+  }
+
+  .card h2 {
+    color: #fff;
+  }
+
+  .cont {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .card-img {
+    display: flex;
+    justify-content: space-around;
+    height: 410px;
+    width: 310px;
+  }
+
+  .cont ul li {
+    height: 40px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.24);
+    left: 79px;
+    top: 0;
+    border-radius: 0;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .card-button {
+    height: 58px;
+    width: 310px;
+    position: relative;
+    display: none;
+    bottom: 70px;
+  }
+
+  .card:hover {
+    animation: animate 2s;
+    transition: ease-out;
+  }
+
+  @keyframes animate {
+    0% {
+      transform: scale(0.95);
+    }
+
+    50% {
+      transform: scale(1.05);
+    }
+
+    75% {
+      transform: scale(1);
+    }
+
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .card:hover .card-button {
+    display: flex;
+  }
+
+  .card-button button {
+    position: relative;
+    top: 25%;
+    outline: none;
+    border: none;
+    background: #f55800;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+  }
+
   .mob-title {
     display: none;
   }
@@ -739,13 +939,22 @@ textarea {
     gap: 20px;
   }
 
+  .recent-work {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+  }
+
   .recent-work h3 {
     color: #000;
     text-align: left;
     margin-bottom: 15px;
-    font-family: 'Crete Round', 'Times New Roman', sans-serif;
+    font-family: 'Crete Round', sans-serif;
     font-style: normal;
-    font-size: 36px;
+    font-weight: 400;
+    font-size: 40px;
     line-height: 52px;
   }
 
@@ -760,70 +969,9 @@ textarea {
     border-radius: 0;
   }
 
-  .work-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 0;
-    margin: 0;
-    gap: 20px;
-  }
-
-  .project-section {
-    width: 28%;
-    margin: 20px;
-    padding: 20px;
-  }
-
-  .project-section-box {
-    width: 100%;
-    height: 100vh;
-    margin-top: 70px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .first-em p,
-  .first-em h2,
-  .first-em .btn {
-    display: none;
-  }
-
-  .first-mob {
-    display: none;
-  }
-
   .recent-hr {
-    width: 750px;
+    width: 700px;
     border: 1px solid black;
-  }
-
-  .first-em {
-    background-image: url("images/Img\ Placeholder\ \(6\).png");
-  }
-
-  .second {
-    background-image: url("images/Img\ Placeholder\ \(4\).png");
-  }
-
-  .third {
-    background-image: url("images/Img\ Placeholder\ \(5\).png");
-  }
-
-  .third .project-section-box {
-    display: flex;
-    justify-content: center;
-    align-self: flex-end;
-    margin-top: 7rem;
-  }
-
-  .see-btn {
-    position: initial;
-    background-color: rgb(255, 145, 0);
-    width: 18.8rem;
-    margin-top: 17.7rem;
-    margin-left: -19.6px;
   }
 
   .view-project {
@@ -844,14 +992,11 @@ textarea {
     background: #f55800;
   }
 
-  .desk-btn .see-btn {
-    display: none;
-  }
-
   .about-me-section {
     background-image: url("images/Group.png");
     background-size: auto;
     background-position-y: 100px;
+    margin-top: 120px;
   }
 
   .about-me {
