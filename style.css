@@ -375,7 +375,14 @@ button:active {
   width: 150px;
   height: 40px;
   margin-left: 20px;
+  animation-name: animation;
+  animation-duration: 2s;
   margin-bottom: 16rem;
+}
+
+@keyframes animation {
+  from { background-color: red; }
+  to { background-color: yellow; }
 }
 
 .about_footer ul {
