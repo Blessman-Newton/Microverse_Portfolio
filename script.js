@@ -347,3 +347,23 @@ view.forEach((element) => element.addEventListener('click', () => {
   });
 }));
 // /* ---------------------Windows popup code above----------------------------- */
+
+// /* ---------------------Form validation code below----------------------------- */
+
+const form = document.getElementById('myForm');
+function handleSubmit(event) {
+  event.preventDefault(); // Prevents the form from being submitted
+  const emailField = document.getElementById('emailField');
+  const errorMessage = document.getElementById('errorField');
+  const inputValue = emailField.value;
+  // Check if the input contains any lowercase letters
+  if (/[A-Z]/.test(inputValue)) {
+    errorMessage.textContent = 'Email should not contain upperrcase letters.';
+  } else {
+    errorMessage.textContent = ''; // Clear the error message
+    // Proceed with form submission
+    form.submit();
+  }
+}
+form.addEventListener('submit', handleSubmit);
+/* ---------------------Form validation code above----------------------------- */
