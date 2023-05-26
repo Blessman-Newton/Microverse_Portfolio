@@ -1,4 +1,5 @@
 const projectData = document.querySelector('#work-card');
+const heroSection = document.querySelector('#portfolio');
 const projectsMob = document.querySelector('#work-card-mobile');
 
 // JavaScript arrays containing work section information
@@ -65,6 +66,25 @@ const projects = [
   },
 ];
 
+const portfolio = [
+  {
+    title: 'My Recent Works',
+    header: 'Multi Post Stories',
+    technologies: ['CSS', 'HTML', 'Boostrap', 'Ruby'],
+    image: 'images/Img Placeholder.png',
+    imageMob: 'images/Img Placeholder (3).png',
+    description: `A daily selection
+    of privately personalized reads; 
+    no accounts or sign-ups <br> required. 
+    This has been the industry's 
+    standard dummy <br> text ever since 
+    the 1500s, when an unknown
+     printer took a <br>
+    standard dummy text.`,
+    button: 'See Project',
+  },
+];
+
 const popup = [
   {
     title: 'Keeping track of hundreds of components website',
@@ -72,18 +92,18 @@ const popup = [
     button: ['HTML', 'Boostrap', 'Ruby on rails'],
     image: 'images/aya.png',
     imageMob: 'images/snapsmall.png',
-    description: `Lorem Ipsum is simply dummy text of the
-    printing and typesetting industry.
-    Lorem Ipsum has been the industry's
-    standard dummy text ever since the 1500s,
-    when an unknown printer took a
-     galley of type and scrambled it 1960s.`,
-    descriptionMob: `Lorem Ipsum is simply dummy text of the
-    printing and typesetting industry.
-    Lorem Ipsum has been the industry's
-    standard dummy text ever since the 1500s,
-    when an unknown printer took a
-     galley of type and scrambled it 1960s.`,
+    description: `Lorem Ipsum is simply dummy text of
+     the printing and typesetting industry. Lorem Ipsum has been the 
+     industry's standard dummy text ever since the 1500s, when an unknown
+     make a type specimen book.
+       It has survived not only five centuries,
+     but also the leap into electronic typesetting, remaining essent`,
+    descriptionMob: `Lorem Ipsum is simply dummy text of
+    the printing and typesetting industry. Lorem Ipsum has been the 
+    industry's standard dummy text ever since the 1500s, when an unknown
+      make a type specimen book.
+      It has survived not only five centuries,
+    but also the leap into electronic typesetting, remaining essent`,
     links: ['See live', 'See source'],
     linkImg: ['images/link.png', 'images/Vector.png'],
     linkSource: ['https://blessman-newton.github.io/Microverse_Portfolio/', 'https://github.com/Blessman-Newton/Microverse_Portfolio'],
@@ -147,7 +167,47 @@ const projectsMobile = [
     button: 'See Project',
   },
 ];
-// Work section template
+
+// Recent section template
+let portfolioTemplate = '';
+
+portfolio.forEach((recent) => {
+  let technologies = '';
+  recent.technologies.forEach((tech) => {
+    technologies += `<li>${tech}</li>`;
+  });
+  const tag = `
+  <div class="work-section">
+  <div class="recent-work">
+      <h3>${recent.title}</h3>
+      <hr class="recent-hr">
+  </div>
+  <div class="project-box">
+      <div class="img-holder">
+          <img id="img1" src="${recent.image}" alt="">
+          <img id="img2" src="${recent.imageMob}" alt="">
+      </div>        
+      <div class="work-content">
+          <h2>${recent.header}</h2>
+          <p>
+          ${recent.description}
+          </p>
+          <div class="btn">
+              <ul>
+              ${technologies}
+              </ul>
+          </div>
+          <div class="see_more_btn">
+              <button class="view-project" type="button">${recent.button}</button>
+          </div> 
+      </div>
+  </div>
+</div>
+    `;
+  portfolioTemplate += tag;
+});
+heroSection.innerHTML = portfolioTemplate;
+// Recent section template
 
 // Work section template
 let desktopTemplate = '';
@@ -181,6 +241,7 @@ projectData.innerHTML = desktopTemplate;
 
 // Work section template
 
+// Mobile template
 let MobileTemplate = '';
 
 projectsMobile.forEach((projectMob) => {
@@ -209,7 +270,7 @@ projectsMobile.forEach((projectMob) => {
   MobileTemplate += code;
 });
 projectsMob.innerHTML = MobileTemplate;
-// Work section template
+// Mobile template
 
 /* ---------------------hamburger start here! below----------------------------- */
 
@@ -264,7 +325,7 @@ view.forEach((element) => element.addEventListener('click', () => {
                           </p>
                          
                           <div class="popup-button">
-                            <button class="popup-btn"><a href="${pop.linkSource[0]}">${pop.links[0]} <img class="link-img" src="${pop.linkImg[0]}" />
+                            <button class="popup-btn git"><a href="${pop.linkSource[0]}">${pop.links[0]} <img class="link-img" src="${pop.linkImg[0]}" />
                             </a></button>
                             <button class="popup-btn git"><a href="${pop.linkSource[1]}">${pop.links[1]} <img class="link-img" src="${pop.linkImg[1]}" />
                              </a>
