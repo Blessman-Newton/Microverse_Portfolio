@@ -357,8 +357,8 @@ function handleSubmit(event) {
   const errorMessage = document.getElementById('errorField');
   const inputValue = emailField.value;
   // Check if the input contains any lowercase letters
-  if (/[A-Z]/.test(inputValue)) {
-    errorMessage.textContent = 'Email should not contain upperrcase letters.';
+  if (/[a-z]/.test(inputValue)) {
+    errorMessage.textContent = '.';
   } else {
     errorMessage.textContent = ''; // Clear the error message
     // Proceed with form submission
