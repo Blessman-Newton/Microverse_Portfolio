@@ -241,6 +241,10 @@ hr {
   display: none;
 }
 
+.error {
+  color: red;
+}
+
 .project-box p {
   font-family: 'Inter', sans-serif;
   font-style: normal;
