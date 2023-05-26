@@ -10,7 +10,6 @@ const projects = [
     description: '',
     technologies: [],
     button: 'See Project',
-    link: '',
   },
   {
     title: 'Data Dashboard Healthcare',
@@ -66,6 +65,31 @@ const projects = [
   },
 ];
 
+const popup = [
+  {
+    title: 'Keeping track of hundreds of components website',
+    titleMob: 'Multi Post Stories',
+    button: ['HTML', 'Boostrap', 'Ruby on rails'],
+    image: 'images/aya.png',
+    imageMob: 'images/snapsmall.png',
+    description: `Lorem Ipsum is simply dummy text of the
+    printing and typesetting industry.
+    Lorem Ipsum has been the industry's
+    standard dummy text ever since the 1500s,
+    when an unknown printer took a
+     galley of type and scrambled it 1960s.`,
+    descriptionMob: `Lorem Ipsum is simply dummy text of the
+    printing and typesetting industry.
+    Lorem Ipsum has been the industry's
+    standard dummy text ever since the 1500s,
+    when an unknown printer took a
+     galley of type and scrambled it 1960s.`,
+    links: ['See live', 'See source'],
+    linkImg: ['images/link.png', 'images/Vector.png'],
+    linkSource: ['https://blessman-newton.github.io/Microverse_Portfolio/', 'https://github.com/Blessman-Newton/Microverse_Portfolio'],
+
+  },
+];
 // JavaScript arrays containing work section information
 const projectsMobile = [
   {
@@ -209,49 +233,40 @@ backMenu.forEach((element) => element.addEventListener('click', () => {
 /* ---------------------Windows popup code below----------------------------- */
 const body = document.querySelector('body');
 const view = document.querySelectorAll('.view-project');
+
 view.forEach((element) => element.addEventListener('click', () => {
-  const show = document.createElement('div');
-  const detailPop = document.createElement('div');
-  show.className = 'show';
-  detailPop.className = 'pop';
-  detailPop.innerHTML = `
+  popup.forEach((pop) => {
+    const show = document.createElement('div');
+    const detailPop = document.createElement('div');
+    show.className = 'show';
+    detailPop.className = 'pop';
+    detailPop.innerHTML = `
                       <div class="popup-header">
-                        <h2 class="desktop" id="desktop">Keeping track of hundreds
-                         of components website</h2>
+                        <h2 class="desktop" id="desktop">${pop.title}</h2>
                          <h2 class="mob-title">Multi Post Stories</h2>
                         <span id="close">&times;</span>
                       </div>
                         <div class="popup-button">
-                          <button id="lists">HTML</button>
-                          <button id="lists">Boostrap</button>
-                          <button id="lists">Ruby on rails</button>
+                          <button id="lists">${pop.button[0]}</button>
+                          <button id="lists">${pop.button[1]}</button>
+                          <button id="lists">${pop.button[2]}</button>
                         </div>
                       <div class="popup-body">
-                        <img class="desktop" src="images/aya.png" alt="">
-                        <img class="mob" src="images/snapsmall.png" alt="">
+                        <img class="desktop" src="${pop.image}" alt="">
+                        <img class="mob" src="${pop.imageMob}" alt="">
                         <div class="pop-details">
                           <p>
-                          Lorem Ipsum is simply dummy text of the
-                          printing and typesetting industry.
-                          Lorem Ipsum has been the industry's
-                          standard dummy text ever since the 1500s,
-                          when an unknown printer took a
-                           galley of type and scrambled it 1960s.
+                          ${pop.description}
                           </p>
 
                           <p class="desktop">
-                          Lorem Ipsum is simply dummy text of the
-                          printing and typesetting industry.
-                          Lorem Ipshum has been the industry's
-                          standard dummy text ever since the 1500s,
-                          when an unknown printer took a
-                           galley of type and scrambled it 1960s.
+                          ${pop.descriptionMob}
                           </p>
                          
                           <div class="popup-button">
-                            <button class="popup-btn"><a href="">See live  <img class="link-img" src="images/link.png" />
+                            <button class="popup-btn"><a href="${pop.linkSource[0]}">${pop.links[0]} <img class="link-img" src="${pop.linkImg[0]}" />
                             </a></button>
-                            <button class="popup-btn git"><a href="">See Source <img class="link-img" src="images/vector.png" />
+                            <button class="popup-btn git"><a href="${pop.linkSource[1]}">${pop.links[1]} <img class="link-img" src="${pop.linkImg[1]}" />
                              </a>
                             </button>
                           </div>
@@ -259,13 +274,15 @@ view.forEach((element) => element.addEventListener('click', () => {
                       </div>
     
       `;
-  show.appendChild(detailPop);
-  body.appendChild(show);
 
-  const close = document.querySelector('#close');
+    show.appendChild(detailPop);
+    body.appendChild(show);
 
-  close.addEventListener('click', () => {
-    body.removeChild(show);
+    const close = document.querySelector('#close');
+
+    close.addEventListener('click', () => {
+      body.removeChild(show);
+    });
   });
 }));
 // /* ---------------------Windows popup code above----------------------------- */
