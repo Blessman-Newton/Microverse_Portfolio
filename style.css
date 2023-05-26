@@ -208,6 +208,10 @@ hr {
   margin-bottom: 20px;
 }
 
+.hr {
+  width: 100%;
+}
+
 .popup-btn .link-img {
   height: 20px;
   width: 20px;
@@ -609,7 +613,7 @@ textarea {
   padding: 10px;
   position: relative;
   top: 10px;
-  color: #67798E;
+  color: #67798e;
 }
 
 .popup-button button {
@@ -633,7 +637,7 @@ textarea {
 
 .popup-button .popup-btn {
   position: relative;
-  top:10px;
+  top: 10px;
   right: 8px;
   background: #ff6b00;
   color: #fff;
@@ -655,7 +659,6 @@ textarea {
   line-height: 16px;
   padding: 10px;
 }
-
 
 .git:hover {
   transition: ease-out 0.5s;
@@ -784,13 +787,15 @@ textarea {
   color: #f55800;
   transition: ease-in 1s;
 }
-.pop-details p{
-font-family: 'Inter', sans-serif;
-font-size: 12px;
-line-height: 25px;
-color:#344563;
-font-style: normal;
+
+.pop-details p {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  line-height: 25px;
+  color: #344563;
+  font-style: normal;
 }
+
 @media screen and (min-width: 768px) {
   .container {
     background-image: url("images/Illustration-header.png");
@@ -936,21 +941,21 @@ font-style: normal;
     font-size: 17px;
     line-height: 24px;
   }
+
   .git {
     position: relative;
     height: 24px;
-  width: 98px;
-  left: -13px;
-  top: 8px;
-  margin: 10px;
-  border-radius: nullpx;
-  font-family: 'Inter', sans-serif;
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 14px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  
+    width: 98px;
+    left: -13px;
+    top: 8px;
+    margin: 10px;
+    border-radius: nullpx;
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    text-align: center;
   }
 
   .mob-title {
@@ -1222,8 +1227,9 @@ font-style: normal;
     margin-top: 10px;
     border: 1px solid #d7d7d9;
   }
+
   .popup-button .popup-btn {
-    margin-top: 20px;
+    margin-top: 18px;
     background: #ff6b00;
     color: #fff;
     font-family: 'Inter', sans-serif;
@@ -1233,7 +1239,7 @@ font-style: normal;
     line-height: 24px;
     width: 150px;
   }
-  
+
   .popup-button #lists {
     position: relative;
     top: -49px;
