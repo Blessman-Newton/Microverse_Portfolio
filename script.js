@@ -367,3 +367,25 @@ function handleSubmit(event) {
 }
 form.addEventListener('submit', handleSubmit);
 /* ---------------------Form validation code above----------------------------- */
+
+/* ---------------------Local storage code above----------------------------- */
+
+window.addEventListener('DOMContentLoaded', () => {
+  const formData = localStorage.getItem('formData');
+  if (formData) {
+    const { name, email, message } = JSON.parse(formData);
+    document.getElementById('usernameField').value = name || '';
+    document.getElementById('emailField').value = email || '';
+    document.getElementById('messageField').value = message || '';
+  }
+});
+
+// Save form data to local storage whenever the input fields change
+document.getElementById('myForm').addEventListener('input', () => {
+  const name = document.getElementById('usernameField').value;
+  const email = document.getElementById('emailField').value;
+  const message = document.getElementById('messageField').value;
+  const formData = { name, email, message };
+  localStorage.setItem('formData', JSON.stringify(formData));
+});
+/* ---------------------Local storage code above----------------------------- */
