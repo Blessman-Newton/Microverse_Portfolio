@@ -1318,7 +1318,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 1024px) {
+/* @media screen and (max-width: 1024px) {
   .hamburger {
     display: block;
   }
@@ -1363,4 +1363,4 @@ textarea {
     display: none;
     border-bottom: none;
   }
-}
+} */
