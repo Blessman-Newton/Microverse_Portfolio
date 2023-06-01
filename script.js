@@ -381,5 +381,12 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 // Save form data to local storage whenever the input fields change
+document.getElementById('myForm').addEventListener('input', () => {
+  const name = document.getElementById('usernameField').value;
+  const email = document.getElementById('emailField').value;
+  const message = document.getElementById('messageField').value;
 
+  const formData = { name, email, message };
+  localStorage.setItem('formData', JSON.stringify(formData));
+});
 /* ---------------------Local storage code above----------------------------- */
