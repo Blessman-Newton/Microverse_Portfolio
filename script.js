@@ -244,7 +244,7 @@ projectData.innerHTML = desktopTemplate;
 // Mobile template
 let MobileTemplate = '';
 
-projectsMobile.forEach((projectMob, index) => {
+projectsMobile.forEach((projectMob) => {
   let technologies = '';
   projectMob.technologies.forEach((tech) => {
     technologies += `<li>${tech}</li>`;
