@@ -225,7 +225,7 @@ projects.forEach((project) => {
     <p>
       ${project.description}
     </p>
-    <ul>
+    <ul class="tech-list">
         ${technologies}
     </ul>
    
@@ -244,7 +244,7 @@ projectData.innerHTML = desktopTemplate;
 // Mobile template
 let MobileTemplate = '';
 
-projectsMobile.forEach((projectMob) => {
+projectsMobile.forEach((projectMob, index) => {
   let technologies = '';
   projectMob.technologies.forEach((tech) => {
     technologies += `<li>${tech}</li>`;
