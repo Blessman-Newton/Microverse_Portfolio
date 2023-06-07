@@ -1098,20 +1098,21 @@ textarea {
   .contact-form {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    background: #f0d;
+    gap: 20px;
   }
 
   .contact-info {
-    width: 50%;
+    width: 40%;
+    position: relative;
+    bottom: 73px;
   }
 
   .contact-info p {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-top: 40px;
   }
 
   .form-group {
@@ -1119,7 +1120,6 @@ textarea {
     width: 100%;
     justify-content: center;
     align-items: center;
-    background: #50f291;
   }
 
   .input {
