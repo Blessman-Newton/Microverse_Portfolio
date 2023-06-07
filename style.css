@@ -43,6 +43,46 @@ li {
   list-style: none;
 }
 
+.btn li {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500px;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 12px;
+  width: 78px;
+  height: 40px;
+  border: 1px solid #8993a4;
+}
+
+.list-style li {
+  list-style-image: none;
+}
+
+.cont ul li {
+  height: 40px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.24);
+  left: 79px;
+  top: 0;
+  border-radius: 0;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.navbar li:hover {
+  animation: animate 4s;
+  transition: ease-out;
+}
+
 a {
   text-decoration: none;
   color: #fff;
@@ -51,6 +91,13 @@ a {
 .navbar a {
   text-decoration: none;
   color: #fff5e1;
+}
+
+.navbar a:hover {
+  animation: animate 4s;
+  transition: ease-out;
+  text-decoration: underline;
+  color: #fff;
 }
 
 .navbar {
@@ -64,6 +111,11 @@ a {
 .navtabs {
   display: flex;
   padding: 30px;
+}
+
+.logo:hover {
+  animation: animate 4s;
+  transition: ease-out;
 }
 
 .hamburger {
@@ -143,7 +195,17 @@ h2 {
 
 ul {
   display: flex;
-  gap: 15px;
+  gap: 20px;
+}
+
+.icon ul {
+  color: #fff;
+  padding: 6px;
+  gap: 30px;
+}
+
+.cont ul {
+  gap: 35px;
 }
 
 li a i {
@@ -202,6 +264,12 @@ section {
   font-weight: 400;
   font-size: 36px;
   line-height: 52px;
+}
+
+.work-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 hr {
@@ -274,23 +342,6 @@ hr {
   align-items: center;
 }
 
-.btn li {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 500px;
-  font-size: 15px;
-  line-height: 20px;
-  color: #000;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 10px 12px;
-  width: 78px;
-  height: 40px;
-  border: 1px solid #8993a4;
-}
-
 .btn {
   width: 100%;
 }
@@ -352,7 +403,6 @@ hr {
   background: #f55800;
   width: 150px;
   height: 40px;
-  margin-left: 20px;
   margin-bottom: 16rem;
 }
 
@@ -387,7 +437,7 @@ button:active {
   width: 22rem;
   padding: 16px;
   margin-top: 50px;
-  gap: 25px;
+  gap: 30px;
 }
 
 .cont h2 {
@@ -454,16 +504,11 @@ button:active {
   list-style-image: url("images/Rectangle\ 57.png");
 }
 
-.list-style li {
-  list-style-image: none;
-}
-
 .contact-form {
   display: flex;
   flex-direction: coluhmn;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
   width: 100%;
   height: 50rem;
 }
@@ -486,7 +531,7 @@ button:active {
   display: flex;
   flex-direction: column;
   margin-top: 40px;
-  gap: 20px;
+  gap: 40px;
 }
 
 .input {
@@ -690,7 +735,7 @@ textarea {
 }
 
 #work-card-mobile {
-  gap: 40px;
+  gap: 50px;
   display: flex;
 }
 
@@ -710,11 +755,11 @@ textarea {
 
 .cont {
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 10px;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 40px;
 }
 
 .card-img {
@@ -723,20 +768,6 @@ textarea {
   align-content: center;
   height: 410px;
   width: 310px;
-}
-
-.cont ul li {
-  height: 40px;
-  padding: 10px;
-  background: rgba(255, 255, 255, 0.24);
-  left: 79px;
-  top: 0;
-  border-radius: 0;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
 }
 
 #work-card-mobile .card-button {
@@ -808,7 +839,7 @@ textarea {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin-top: 80px;
+    margin-top: 78px;
   }
 
   .row {
@@ -1067,26 +1098,28 @@ textarea {
   .contact-form {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    background: #f0d;
   }
 
   .contact-info {
-    width: 40%;
+    width: 50%;
   }
 
   .contact-info p {
     display: flex;
     justify-content: center;
-    text-align: left;
+    text-align: center;
     margin-top: 40px;
   }
 
   .form-group {
     display: flex;
-    width: 60%;
-    justify-content: flex-start;
-    align-items: flex-start;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: #50f291;
   }
 
   .input {
