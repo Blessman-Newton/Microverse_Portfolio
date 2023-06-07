@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/Rectangle 57.png"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
@@ -131,14 +132,13 @@
             get in  <br> touch.
         </p>
     </div>
-    <form class="contact-form" id="myForm" action="https://formspree.io/f/mdovbjlz" method="post">
+    <form class="contact-form-group" id="myForm" action="https://formspree.io/f/mdovbjlz" method="post">
         <div class="form-group">
             <input class="input" id="usernameField" type="text" name="name" maxlength="30" placeholder="Full name" rows="10" required>
             <input class="input" id="emailField"  type="email" name="email" placeholder="Email address" required>
-           
+            <span id="errorField" class="error"></span>
             <textarea id="messageField" name="send" maxlength="399" placeholder="Write me something" required></textarea>
             <input class="submit" type="submit" value="Get in touch">
-            <span id="errorField" class="error"></span>
         </div>
     </form>
    </section>
